@@ -247,7 +247,7 @@ header .container nav ul li a:hover {
 /* Start Home Section  */
 .home {
     /* background-image: url("../img/Main-image-First-page-painting.jpg"); */
-    height: 102vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
