@@ -931,60 +931,35 @@ header .container nav ul li a:hover {
 /* End News Section  */
 /* Start Contact Section  */
 
-.contact .container {
+.contact>div{
+    background-image: url("../img/02.jpg");
+    height: 230px;
+}
+
+.contact h2{
+    color: #FDFDFD;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact p{
     text-align: center;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
-.contact .container p {
-    max-width: 67.3rem;
-    margin: 5rem auto;
-}
-
-.contact .container .contact-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.contact .contact-container .contact-left,
-.contact .contact-container .contact-right {
-    flex: 1 1 45%;
-    padding: 0 2rem;
-}
-
-.contact .contact-container .contact-left form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.contact .contact-container .contact-left form .form-group input,
-.contact .contact-container .contact-left form .form-group textarea {
-    width: 100%;
-    padding: 1.5rem 1rem;
-    border-radius: .5rem;
-    border: 1px solid #f0f0f0;
+.contact span{
+    color: #fff;
     font-size: 1.6rem;
-}
-
-.contact .contact-container .contact-left form .form-group textarea {
-    resize: none;
-    min-height: 18rem;
-}
-
-.contact .contact-container .contact-left form .form-group input:focus::placeholder,
-.contact .contact-container .contact-left form .form-group textarea:focus::placeholder {
-    opacity: 0;
-}
-
-.contact .contact-container .contact-left form .form-group button {
-    border: none;
-    cursor: pointer;
-}
-
-@media (min-width: 768px) {
-    .contact .container .contact-container {
-        flex-direction: row;
-    }
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    background-color: #27B4CB;
+    padding: 12px 34px;
+    border-radius: 4px;
 }
 
 /* End Contact Section  */
