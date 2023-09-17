@@ -932,8 +932,9 @@ header .container nav ul li a:hover {
 /* Start Contact Section  */
 
 .contact>div{
-    background-image: url("../img/02.jpg");
-    height: 230px;
+    background-image: url("../img/woman-customer-service-worker-call-center-operator-with-phone-headset-beautiful-young-call-center-assistant-smiling-isolated.jpg");
+    height: 500px;
+    background-size: cover;
 }
 
 .contact h2{
