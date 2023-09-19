@@ -9,8 +9,6 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-
-
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -21,49 +19,19 @@ app.use(
   })
 );
 
-
-
-app.post('/submit_form', (req, res) => {
+app.post('/submit_contactForm', (req, res) => {
   const body = req.body;
-  const activity = body.activity;
   const firstName = body.firstName;
   const lastName = body.lastName;
   const email = body.email;
-  const description = body.description;
-  const phoneNumber = body.phoneNumber;
-  const address = body.address
-
-
-  var mailOptions = {
-    from: 'fixitmaster12@gmail.com',
-    to: 'admin-support@fix-it-masters.com',
-    subject: 'Order Request from Fix-It-Masters',
-    text: `Activity: ${activity}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nPhone number:${phoneNumber}\nEmail: ${email}\nAddress:${address}\nDescription: ${description}`
-  };
-
-
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      res.status(500).send("Failed to send the message. Please try again later.");
-    } else {
-      res.status(200).send("Message sent successfully!");
-    }
-  });
-});
-
-
-app.post('/submit_contactForm', (req, res) => {
-  const body = req.body;
-  const fullNameContact = body.fullNameContact;
-  const emailContact = body.emailContact;
-  const subjectContact = body.subjectContact;
-  const descriptionContact = body.descriptionContact;
+  const contactNumber = body.contactNumber;
+  const message = body.message;
 
   var mailOptions = {
     from: 'fixitmaster12@gmail.com',
     to: 'admin-support@fix-it-masters.com',
     subject: 'Contact our team from Fix-It-Masters',
-    text: `Full name: ${fullNameContact}\n Subject: ${subjectContact}\n Email: ${emailContact}\nDescription: ${descriptionContact}`
+    text: `First Name: ${firstName}\n Last Name: ${lastName}\n Email: ${email}\n Contact Number: ${contactNumber}\n Message: ${message}`
   };
 
   transporter.sendMail(mailOptions, function (error, info) {

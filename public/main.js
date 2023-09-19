@@ -140,57 +140,6 @@ function closeErrorMessage() {
     errorModal.style.display = "none";
 }
 
-// Function to handle form submission
-document.getElementById("submitButton").addEventListener("click", function (event) {
-    event.preventDefault();
-    // Get form values
-    var activity = document.getElementById("activity").value;
-    var firstName = document.getElementById("firstName").value;
-    var lastName = document.getElementById("lastName").value;
-    var email = document.getElementById("email").value;
-    var description = document.getElementById("description").value;
-    var phoneNumber = document.getElementById("phoneNumber").value;
-    var address = document.getElementById("address").value;
-    var list = ['firstName', 'lastName', 'email', 'description', 'phoneNumber', 'address'];
-    var result = 0;
-
-    list.forEach(x => {
-        result += checkValidation(x);
-    })
-    if (result == list.length) {
-        let loader = document.getElementById('loader');
-        loader.style.visibility = 'visible';
-
-        fetch("/submit_form", {
-            method: "POST",
-            body: JSON.stringify({
-                activity,
-                firstName,
-                lastName,
-                email,
-                description,
-                phoneNumber,
-                address
-            }),
-            headers: {
-                "Content-type": "application/json; charset=UTF-8"
-            }
-        })
-            .then(response => {
-                loader.style.visibility = 'hidden';
-                showSuccessMessage();
-            })
-            .catch(error => {
-                loader.style.visibility = 'hidden';
-                showErrorMessage();
-            });
-
-        // After form submission, you can close the modal or show a success message to the user.
-        closeModal(); // Example: Close the modal after form submission.
-    }
-
-});
-
 function checkValidation(id) {
     var element = document.getElementById(id);
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -257,12 +206,13 @@ setInterval(() => {
 document.getElementById("contactSubmitButton").addEventListener("click", function (event) {
     event.preventDefault();
     // Get form values
-    var fullNameContact = document.getElementById("fullNameContact").value;
-    var emailContact = document.getElementById("emailContact").value;
-    var subjectContact = document.getElementById("subjectContact").value;
-    var descriptionContact = document.getElementById("descriptionContact").value;
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var contactNumber = document.getElementById("contactNumber").value;
+    var message = document.getElementById("message").value;
 
-    var list = ['fullNameContact', 'emailContact', 'subjectContact', 'descriptionContact'];
+    var list = ['firstName', 'lastName', 'email', 'contactNumber', 'message'];
     var result = 0;
 
     list.forEach(x => {
@@ -272,10 +222,11 @@ document.getElementById("contactSubmitButton").addEventListener("click", functio
         fetch("/submit_contactForm", {
             method: "POST",
             body: JSON.stringify({
-                fullNameContact,
-                emailContact,
-                subjectContact,
-                descriptionContact
+                firstName,
+                lastName,
+                email,
+                contactNumber,
+                message
             }),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
