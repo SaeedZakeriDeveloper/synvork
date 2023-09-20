@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -249,7 +250,7 @@ header .container nav ul li a:hover {
 /* Start Home Section  */
 .home {
     /* background-image: url("../img/Main-image-First-page-painting.jpg"); */
-    height: 100vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1860,21 +1861,48 @@ input::placeholder {
 
 .animate-text1 {
     position: absolute;
-    left: -100%; /* Start off the screen on the left side */
-    top: 50%;
+    right: -100%; /* Start off the screen on the left side */
+    top: 30%;
     transform: translateY(-50%);
-    font-size: 150px; /* Adjust font size as needed */
-    color: rgb(33, 37, 41)
+    font-size: 200px; /* Adjust font size as needed */
+    color: black
     ; /* Text color */
     white-space: nowrap; /* Prevent text from wrapping */
     animation: moveText 10s linear infinite; /* Adjust the animation duration as needed */
+    font-family: 'Termina', sans-serif;
+    font-weight: 800;
+    /* line-height: .9!important; */
+    white-space: nowrap;
+
 }
 
 @keyframes moveText {
     0% {
-        left: -100%;
+        right: -100%;
     }
     100% {
-        left: 100%; /* Move text to the right side */
+        right: 100%; /* Move text to the right side */
+    }
+}
+
+
+
+
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.logo-container img {
+    max-width: 100%; /* Make sure the logo fits within its container */
+    animation: scaleUp 2s alternate infinite; /* Apply a scaling animation */
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.1); /* Increase the scale factor for the desired effect */
     }
 }
