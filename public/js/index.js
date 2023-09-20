@@ -24,7 +24,10 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        if (positionFromTop - window.innerHeight <= 0) {
+        // if (positionFromTop - window.innerHeight <= 0) {
+        //     element.classList.add('fadeInUp');
+        // }
+        if (window.innerHeight - positionFromTop >= 270) {
             element.classList.add('fadeInUp');
         }
     }

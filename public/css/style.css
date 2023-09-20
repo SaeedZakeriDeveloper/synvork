@@ -1746,7 +1746,12 @@ input::placeholder {
     color: #7a7a7a;
 }
 
+.fadeInLeftBox{
+    opacity: 0;
+}
+
 .fadeInLeft {
+    opacity: 1;
     animation-name: fadeInLeft;
 }
 
@@ -1763,11 +1768,21 @@ input::placeholder {
 }
 
 .animated {
-    animation-duration: 1.3s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
+.animated_2{
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+}
+
+.fadeInRightBox{
+    opacity: 0;
+}
+
 .fadeInRight {
+    opacity: 1;
     animation-name: fadeInRight;
 }
 
@@ -1783,6 +1798,10 @@ input::placeholder {
     }
 }
 
+.fadeInUpBox{
+    opacity: 0;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1795,6 +1814,7 @@ input::placeholder {
     }
 }
 .fadeInUp {
+    opacity: 1;
     animation-name: fadeInUp
 }
 
