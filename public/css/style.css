@@ -1848,12 +1848,14 @@ input::placeholder {
 }
 
 
+
+
 .animation-container1 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
-    background-color: #333; /* Change the background color as needed */
+    height: 50vh;
+    background-color:  #fed931; /* Change the background color as needed */
 }
 
 .animate-text1 {
@@ -1861,8 +1863,9 @@ input::placeholder {
     left: -100%; /* Start off the screen on the left side */
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px; /* Adjust font size as needed */
-    color: #fff; /* Text color */
+    font-size: 150px; /* Adjust font size as needed */
+    color: rgb(33, 37, 41)
+    ; /* Text color */
     white-space: nowrap; /* Prevent text from wrapping */
     animation: moveText 10s linear infinite; /* Adjust the animation duration as needed */
 }
