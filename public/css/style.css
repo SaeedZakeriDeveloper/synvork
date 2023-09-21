@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +31,7 @@ html {
 
 body {
     background-color: #fed931;
-    
+
 }
 
 ::-webkit-scrollbar {
@@ -206,8 +205,7 @@ header .container nav ul li a {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 3.5px;
-    color: rgb(33, 37, 41)
-    ;
+    color: rgb(33, 37, 41);
     padding: 1.2rem 2.6rem;
     border-radius: 2rem;
 }
@@ -514,7 +512,7 @@ header .container nav ul li a:hover {
 
 .about .container h2 {
     text-align: center;
-    color:  rgb(33, 37, 41)
+    color: rgb(33, 37, 41)
 
 }
 
@@ -935,20 +933,20 @@ header .container nav ul li a:hover {
 /* End News Section  */
 /* Start Contact Section  */
 
-.contact>div{
+.contact > div {
     /* background-image: url("../img/woman-customer-service-worker-call-center-operator-with-phone-headset-beautiful-young-call-center-assistant-smiling-isolated.jpg"); */
     height: 500px;
     background-size: cover;
 }
 
-.contact h2{
+.contact h2 {
     color: #FDFDFD;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.contact p{
+.contact p {
     text-align: center;
     color: #FFFFFF;
     font-size: 26px;
@@ -956,13 +954,13 @@ header .container nav ul li a:hover {
     text-transform: capitalize;
 }
 
-.contact span{
+.contact span {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2.2px;
-    background-color: #27B4CB;
+    background-color: green;
     padding: 12px 34px;
     border-radius: 4px;
 }
@@ -1204,7 +1202,7 @@ video {
 
 .anime {
     animation-fill-mode: both;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 @keyframes bounceToRight {
@@ -1235,7 +1233,48 @@ video {
 }
 
 .bounceToRight {
+    opacity: 1 !important;
     animation-name: bounceToRight;
+}
+
+.bounceToRightBox {
+    opacity: 0;
+}
+
+@keyframes bounceToLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.bounceToLeft {
+    opacity: 1 !important;
+    animation-name: bounceToLeft;
+}
+
+.bounceToLeftBox {
+    opacity: 0;
 }
 
 .centerBox {
@@ -1249,8 +1288,7 @@ video {
 }
 
 .centerBox > h2 {
-    color: rgb(33, 37, 41)
-    ;
+    color: rgb(33, 37, 41);
     font-size: 3.16rem;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -1589,7 +1627,7 @@ input::placeholder {
 }
 
 .invalid {
-    box-shadow: 0 0 6px 3px red;
+    color: red !important;
 }
 
 .valid {
@@ -1725,11 +1763,97 @@ input::placeholder {
 }
 
 .Information img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin-top: 10px;
-    border-radius: 40px;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Information img {
+    /*--s: 520px; !* the image size *!*/
+
+    /*width: 520px;*/
+    /*height: 346px; !* better than aspect-ratio in case the image has a height attribute *!*/
+    box-sizing: border-box;
+    object-fit: cover;
+    /*background: var(--i) 50%/cover #000;*/
+
+    background-blend-mode: luminosity; /* we take the luminosity of the image and we use the hue/staturation of back color so we end having hsl(0 0% L)*/
+    transition: .5s;
+    cursor: pointer;
+}
+
+.Information > .container:nth-child(1) img {
+    background: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg") 100%/cover #000;
+}
+
+.Information > .container:nth-child(2) img {
+    background: url("../img/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing-protective-clothing.jpg") 100%/cover #000;
+}
+
+.Information > .container:nth-child(3) img {
+    background: url("../img/plant-picture-clean-room-equipment-stainless-steel-machines.jpg") 100%/cover #000;
+}
+
+.Information > .container:nth-child(4) img {
+    background: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg") 100%/cover #000;
+}
+
+.Information img.left {
+    object-position: right;
+    padding-left: var(--s);
+}
+
+/*.Information img.right {*/
+/*    object-position: left;*/
+/*    padding-right: var(--s);*/
+/*}*/
+/*.Information img.top {*/
+/*    object-position: bottom;*/
+/*    padding-top: var(--s);*/
+/*}*/
+/*.Information img.bottom {*/
+/*    object-position: top;*/
+/*    padding-bottom: var(--s);*/
+/*}*/
+
+.Information img:hover {
+    margin-top: 10px;
+    padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .Information img {
+        --s: 85vw; /* the image size */
+        width: 85vw;
+        height: 60vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .Information img {
+        --s: 387.5px; /* the image size */
+
+        width: 387.5px;
+        height: 346px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .Information img {
+        --s: 520px; /* the image size */
+
+        width: 520px;
+        height: 346px;
+    }
+}
+
+/*end*/
+
+@media screen and (max-width: 540px) {
+    .Information img {
+        max-height: 67%;
+    }
 }
 
 .Information .textBox {
@@ -1752,7 +1876,7 @@ input::placeholder {
 
 }
 
-.fadeInLeftBox{
+.fadeInLeftBox {
     opacity: 0;
 }
 
@@ -1778,12 +1902,12 @@ input::placeholder {
     animation-timing-function: ease-out;
 }
 
-.animated_2{
+.animated_2 {
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
 }
 
-.fadeInRightBox{
+.fadeInRightBox {
     opacity: 0;
 }
 
@@ -1804,14 +1928,14 @@ input::placeholder {
     }
 }
 
-.fadeInUpBox{
+.fadeInUpBox {
     opacity: 0;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translate3d(0,100%,0)
+        transform: translate3d(0, 100%, 0)
     }
 
     to {
@@ -1819,14 +1943,15 @@ input::placeholder {
         transform: none
     }
 }
+
 .fadeInUp {
     opacity: 1;
     animation-name: fadeInUp
 }
 
- .langBtn{
-     margin-left: 15px;
- }
+.langBtn {
+    margin-left: 15px;
+}
 
 
 .showBox {
@@ -1849,14 +1974,12 @@ input::placeholder {
 }
 
 
-
-
 .animation-container1 {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 50vh;
-    background-color:  #fed931; /* Change the background color as needed */
+    background-color: #fed931; /* Change the background color as needed */
 }
 
 .animate-text1 {
@@ -1865,8 +1988,7 @@ input::placeholder {
     top: 30%;
     transform: translateY(-50%);
     font-size: 250px; /* Adjust font size as needed */
-    color: green
-    ; /* Text color */
+    color: green; /* Text color */
     white-space: nowrap; /* Prevent text from wrapping */
     animation: moveText 7s linear infinite; /* Adjust the animation duration as needed */
     font-family: 'Termina', sans-serif;
@@ -1884,8 +2006,6 @@ input::placeholder {
         right: 100%; /* Move text to the right side */
     }
 }
-
-
 
 
 .logo-container {
@@ -1910,16 +2030,20 @@ input::placeholder {
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
+header + section {
+    height: 100vh;
+}
 
-
-#container1 {
-    position: absolute;
-    margin-top: 100px;
+.welcomeBox {
+    /*position: absolute;*/
+    /*margin-top: 100px;*/
     width: 100vw;
-    height: 100pt;
+    /*height: 100pt;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
     top: 0;
     bottom: 0;
-
     filter: url(#threshold) blur(0.9px);
 }
 
@@ -1929,22 +2053,14 @@ input::placeholder {
     width: 100%;
     color: green;
     display: inline-block;
-
     font-family: "Raleway", sans-serif;
-    font-size: 150pt;
+    font-size: 13vw;
     font-weight: 800;
-
-    
-
     text-align: center;
-
     user-select: none;
 }
 
-
-.videoback{
-   
+.videoback {
     right: 0;
     z-index: -1;
 }
-

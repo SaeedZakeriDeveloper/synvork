@@ -12,7 +12,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #095a55;
+    background-color: #fed931;
 }
 
 section::before {
@@ -22,7 +22,7 @@ section::before {
     left: 0;
     width: 50%;
     height: 100%;
-    background: #fff38e;
+    background-color: #fed931;
 }
 
 .container {
@@ -38,7 +38,7 @@ section::before {
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #095a55;
+    background: green;
     z-index: 2;
     padding: 40px;
     display: flex;
@@ -182,15 +182,16 @@ section::before {
 .container .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
-    background: #095a55;
-    color: #fff;
+    background: green;
+    color: black;
     border: none;
     max-width: 150px;
     padding: 12px;
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background: #0d948b;
+    background: black;
+    color: green;
 }
 
 /* Responsive Settings */
@@ -247,4 +248,12 @@ section::before {
         position: relative;
         display: flex;
     }
+}
+
+.invalid {
+    color: red !important;
+}
+
+.valid{
+    border-bottom: none;
 }

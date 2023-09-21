@@ -72,15 +72,15 @@
             <h2>Contact us today</h2>
             <div class="formBox">
                 <div class="inputBox w50">
-                    <input tyep="text" required id="firstName"/>
+                    <input tyep="text" required onfocusout="checkValidation('firstName')" id="firstName"/>
                     <span>First Name</span>
                 </div>
                 <div class="inputBox w50">
-                    <input tyep="text" required id="lastName"/>
+                    <input tyep="text" required onfocusout="checkValidation('lastName')" id="lastName"/>
                     <span>Last Name</span>
                 </div>
                 <div class="inputBox w50">
-                    <input tyep="email" required id="email"/>
+                    <input tyep="email" required onfocusout="checkValidation('email')" id="email"/>
                     <span>Email Address</span>
                 </div>
                 <div class="inputBox w50">
@@ -88,7 +88,7 @@
                     <span>Contact Number</span>
                 </div>
                 <div class="inputBox w100">
-                    <textarea required id="message"></textarea>
+                    <textarea required onfocusout="checkValidation('message')" id="message"></textarea>
                     <span>Write your message here...</span>
                 </div>
                 <div class="inputBox w100">

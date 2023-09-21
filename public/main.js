@@ -41,6 +41,7 @@ window.onload = function () {
             playSlide(currentSlide += 1);
         }, reviewSpeed)
     }
+
     leftArrow.addEventListener("click", () => {
         playSlide(currentSlide -= 1);
     })
@@ -144,33 +145,26 @@ function checkValidation(id) {
     var element = document.getElementById(id);
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    if (id == 'email' || id == 'emailContact') {
-        var invalidEmailBox = id == 'email' ? document.getElementById('invalidEmailBox') : document.getElementById('contactInvalidEmailBox');
-        if (element.value != '' && !element.value.match(validRegex)) {
+    if (id == 'email') {
+       if (element.value != '' && !element.value.match(validRegex)) {
             element.className = 'invalid';
-            invalidEmailBox.style.visibility = 'visible';
+            element.value = 'invalid';
             return 0;
-        }
-        else if (element.value != '' && element.value.match(validRegex)) {
+        } else if (element.value != '' && element.value.match(validRegex)) {
             element.className = 'valid';
-            invalidEmailBox.style.visibility = 'hidden';
             return 1;
-        }
-        else if (element.value == '') {
-            invalidEmailBox.style.visibility = 'hidden';
+        } else if (element.value == '') {
             element.className = 'invalid';
-            element.placeholder = 'required';
+            element.value = 'required';
             return 0;
         }
-    }
-    else if (element.value == '') {
+    } else if (element.value == '') {
         element.className = 'invalid';
-        element.placeholder = 'required';
+        element.value = 'required';
         return 0;
-    }
-    else {
+    } else {
         element.className = 'valid';
-        element.placeholder = '';
+
         return 1;
     }
 }
@@ -182,8 +176,7 @@ function changeLanguage() {
         element.classList.remove('franceBtn');
         element.classList.add('unitedBtn');
         window.location.href = "index.html";
-    }
-    else if (className == 'unitedBtn') {
+    } else if (className == 'unitedBtn') {
         element.classList.remove('unitedBtn');
         element.classList.add('franceBtn');
         window.location.href = "index_en.html";
@@ -249,9 +242,6 @@ document.getElementById("contactSubmitButton").addEventListener("click", functio
             });
     }
 });
-
-
-
 
 
 const elts = {

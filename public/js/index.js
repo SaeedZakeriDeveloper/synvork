@@ -1,21 +1,21 @@
 window.addEventListener('scroll', function () {
-    var animatedElements = document.querySelectorAll('.fadeInLeftBox');
+    var animatedElements = document.querySelectorAll('.bounceToLeftBox');
     for (var i = 0; i < animatedElements.length; i++) {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
-            element.classList.add('fadeInLeft');
+            element.classList.add('bounceToLeft','anime');
         }
     }
 
-    var animatedElements = document.querySelectorAll('.fadeInRightBox');
+    var animatedElements = document.querySelectorAll('.bounceToRightBox');
     for (var i = 0; i < animatedElements.length; i++) {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
-            element.classList.add('fadeInRight');
+            element.classList.add('bounceToRight','anime');
         }
     }
 
@@ -29,6 +29,32 @@ window.addEventListener('scroll', function () {
         // }
         if (window.innerHeight - positionFromTop >= 270) {
             element.classList.add('fadeInUp');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('.fadeInLeftBox');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        // if (positionFromTop - window.innerHeight <= 0) {
+        //     element.classList.add('fadeInUp');
+        // }
+        if (window.innerHeight - positionFromTop >= 270) {
+            element.classList.add('fadeInLeft');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('.fadeInRightBox');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        // if (positionFromTop - window.innerHeight <= 0) {
+        //     element.classList.add('fadeInUp');
+        // }
+        if (window.innerHeight - positionFromTop >= 270) {
+            element.classList.add('fadeInRight');
         }
     }
 });
