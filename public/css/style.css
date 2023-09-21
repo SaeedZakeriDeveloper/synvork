@@ -1650,7 +1650,7 @@ input::placeholder {
 
 #requestFormModal h3,
 #requestFormModal .close {
-    margin-top: 25px;
+    margin-top: 150px;
 }
 
 @media (max-width: 640px) {
@@ -1864,13 +1864,13 @@ input::placeholder {
     right: -100%; /* Start off the screen on the left side */
     top: 30%;
     transform: translateY(-50%);
-    font-size: 200px; /* Adjust font size as needed */
-    color: black
+    font-size: 250px; /* Adjust font size as needed */
+    color: green
     ; /* Text color */
     white-space: nowrap; /* Prevent text from wrapping */
-    animation: moveText 10s linear infinite; /* Adjust the animation duration as needed */
+    animation: moveText 7s linear infinite; /* Adjust the animation duration as needed */
     font-family: 'Termina', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     /* line-height: .9!important; */
     white-space: nowrap;
 
@@ -1906,3 +1906,45 @@ input::placeholder {
         transform: scale(1.1); /* Increase the scale factor for the desired effect */
     }
 }
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+
+#container1 {
+    position: absolute;
+    margin-top: 100px;
+    width: 100vw;
+    height: 100pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.9px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    color: green;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 150pt;
+    font-weight: 800;
+
+    
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+.videoback{
+   
+    right: 0;
+    z-index: -1;
+}
+

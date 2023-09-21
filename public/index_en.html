@@ -63,17 +63,37 @@
     </div>
 </header>
 
-<section class="home" id="home">
-    <div class="">
-        <!-- <video src="./img/Filling-Station.mp4" autoplay loop muted playsinline></video> -->
-        <!-- <div class="centerBox container-fluid anime bounceToRight">
-            <h2>Welcome to synvork</h2>
-        </div> -->
+
+<div id="container1">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
+
+<svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
+
+
+
+
+    <!-- <div class="">
         <div class="animation-container1">
             <h1 class="animate-text1" >WELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbspWELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbspWELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbspWELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbspWELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbspWELCOME TO SYNVORK&nbsp&nbsp&nbsp&nbsp </h1>
         </div>
-        
-    </div>
+    </div> -->
+
+
+   
+
+
+
 
 
     <!-- <div class="container" style="padding: 2rem 0;">
@@ -96,7 +116,7 @@
             </div>
         </div>
     </div> -->
-</section>
+
 
 <section class="properties" id="properties">
     <div>
@@ -150,6 +170,10 @@
         </div>
     </div>
 </section>
+
+
+
+
 
 <section class="Information" id="information">
     <div class="container d-block d-lg-flex justify-content-around">
@@ -213,8 +237,20 @@
     </div>
 </section>
 
+
+<video autoplay loop muted plays-inline class="videoback">
+    <source src="./img/Filling-Station.mp4">
+</video>
+
 <section class="news" id="news">
+
+
+
     <div class="container">
+
+     
+
+
         <h2 style="color: #282626 !important;">Stay Ahead with Our Innovations!</h2><br><br><br>
         <div class="news-container">
             <div class="new ">
@@ -369,6 +405,11 @@
   <div class="logo-container">
         <img src="./img/LOGO.png" alt="Your Logo Animation">
     </div>
+
+
+
+
+
 
 <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
