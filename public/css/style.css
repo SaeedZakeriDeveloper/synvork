@@ -1138,18 +1138,18 @@ footer .copyright p span {
     margin-bottom: 20px;
 }
 
-video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+/*video {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*}*/
 
-.home video {
-    width: 100%;
-    height: calc(100vh - 61.25px);
-    filter: blur(3px);
-    object-fit: cover;
-}
+/*.home video {*/
+/*    width: 100%;*/
+/*    height: calc(100vh - 61.25px);*/
+/*    filter: blur(3px);*/
+/*    object-fit: cover;*/
+/*}*/
 
 .text-animation {
     position: absolute;
@@ -1316,7 +1316,7 @@ button {
     cursor: pointer;
 }
 
-button:not(button.franceBtn, button.unitedBtn):hover {
+button:not(button.franceBtn, button.unitedBtn, button.video-button):hover {
     background-color: #45a049;
 }
 
@@ -1973,7 +1973,6 @@ input::placeholder {
     cursor: pointer; /* Add a mouse pointer on hover */
 }
 
-
 .animation-container1 {
     position: relative;
     overflow: hidden;
@@ -2063,4 +2062,90 @@ header + section {
 .videoback {
     right: 0;
     z-index: -1;
+}
+
+section#video > div:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 0.5rem;
+    height: 42vw;
+    margin: auto;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 64.0625rem) and (pointer: fine) and (hover: hover) {
+    section#video > div:nth-child(1):hover .arrow-container {
+        transform: translateX(0);
+        opacity: 1
+    }
+
+    section#video > div:nth-child(1):hover .title-container {
+        transform: translateX(6.75rem);
+    }
+}
+
+@media screen and (max-width: 991px)  {
+
+}
+
+.arrow-container {
+    position: absolute;
+    margin-top: 4.75rem;
+    transform: translateX(-6.25rem);
+    opacity: 0;
+    transition: transform 400ms, opacity 200ms;
+}
+
+.arrow-container > svg {
+    transform: rotate(180deg);
+    color: #ffffff;
+}
+
+.title-container {
+    transition: transform 500ms;
+}
+
+.title-container > p {
+    color: #ffffff;
+}
+
+.title-container > h2 {
+    color: #ffffff;
+    max-width: 8ch;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    line-height: 108%;
+    font-weight: 700;
+    letter-spacing: -0.0925rem;
+    text-transform: none;
+    font-size: 51px;
+}
+
+section#video > div:nth-child(1) video {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 7px;
+    width: 55vw;
+    height: auto;
+}
+
+.video-button {
+    width: 60px;
+    height: 60px;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 10;
+    position: absolute;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: black;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
 }

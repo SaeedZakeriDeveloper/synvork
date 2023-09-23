@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
         var positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
-            element.classList.add('bounceToLeft','anime');
+            element.classList.add('bounceToLeft', 'anime');
         }
     }
 
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
         var positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
-            element.classList.add('bounceToRight','anime');
+            element.classList.add('bounceToRight', 'anime');
         }
     }
 
@@ -64,7 +64,9 @@ window.addEventListener('scroll', function () {
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -160,3 +162,18 @@ function animate() {
 }
 
 animate();
+
+function playVideo() {
+    var video = document.getElementById("synvork-video");
+    var pauseSvg = document.getElementById("PauseSvg");
+    var playSvg = document.getElementById("PlaySvg");
+    if (video.paused) {
+        video.play();
+        playSvg.classList.replace('d-inline-block', 'd-none');
+        pauseSvg.classList.replace('d-none', 'd-inline-block');
+    } else {
+        video.pause();
+        pauseSvg.classList.replace('d-inline-block', 'd-none');
+        playSvg.classList.replace('d-none', 'd-inline-block');
+    }
+}
