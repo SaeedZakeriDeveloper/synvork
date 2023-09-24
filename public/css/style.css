@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: #babebd;
+    background-color: black;
 
 }
 
@@ -83,7 +83,7 @@ p {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.6;
-    color: var(--textColor);
+    color: white;
 }
 
 @media (min-width: 768px) {
@@ -159,7 +159,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #babebd;
+    background-color: black;
     padding: 1.5rem 0;
     z-index: 1000;
 }
@@ -187,7 +187,7 @@ header .container nav {
     top: -100rem;
     left: 0;
     width: 100%;
-    background-color: #babebd;
+    background-color: black;
     padding: 1.6rem;
 }
 
@@ -205,15 +205,15 @@ header .container nav ul li a {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 3.5px;
-    color: rgb(33, 37, 41);
+    color: white;
     padding: 1.2rem 2.6rem;
     border-radius: 2rem;
 }
 
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
-    background-color: var(--blueColor);
-    color: var(--whiteColor);
+    background-color: white;
+    color: black;
 }
 
 @media (min-width: 707px) {
@@ -512,7 +512,7 @@ header .container nav ul li a:hover {
 
 .about .container h2 {
     text-align: center;
-    color: rgb(33, 37, 41)
+    color: white;
 
 }
 
@@ -904,7 +904,7 @@ header .container nav ul li a:hover {
 
 .news .news-container .new .new-text h3 {
     text-transform: capitalize;
-    color: gray;
+    color: white;
     font-size: 2.6rem;
     font-weight: 300;
     max-width: 35.2rem;
@@ -920,7 +920,7 @@ header .container nav ul li a:hover {
 .news .news-container .new .new-text a {
     font-weight: 300;
     font-size: 1.2rem;
-    color: var(--blueColor);
+    color: white;
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -986,7 +986,7 @@ footer .container .box:first-child {
 footer .container .box h4 {
     font-weight: 300;
     font-size: 2rem;
-    color: var(--textColor);
+    color: white;
     text-transform: capitalize;
     margin-bottom: 1rem;
 }
@@ -996,13 +996,13 @@ footer .container .box span {
     display: block;
     font-size: 2rem;
     font-weight: 300;
-    color: var(--textColor);
+    color: white;
     text-transform: capitalize;
     margin-bottom: 1rem;
 }
 
 footer .container .box .map {
-    color: var(--blueColor) !important;
+    color: white !important;
     text-decoration: underline;
 }
 
@@ -1863,7 +1863,7 @@ input::placeholder {
 }
 
 .Information .textBox > h3 {
-    color: #54595F !important;
+    color: white !important;
     font-size: 3rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -1872,7 +1872,7 @@ input::placeholder {
 .Information .textBox > p {
     font-size: 21px;
     font-weight: 400;
-    color: rgb(33, 37, 41)
+    color: white;
 
 }
 
@@ -2069,8 +2069,8 @@ section#video {
 }
 
 section#video > div:nth-child(1) {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+    background-color: white;
+    color: black;
     border-radius: 7px;
     padding: 50px 40px;
     margin: auto;
@@ -2113,7 +2113,7 @@ section#video > div:nth-child(1) {
 
 .arrow-container > svg {
     transform: rotate(180deg);
-    color: #ffffff;
+    color: black;
 }
 
 .title-container {
@@ -2121,12 +2121,12 @@ section#video > div:nth-child(1) {
 }
 
 .title-container > p {
-    color: #ffffff;
+    color: black;
     font-size: 14px;
 }
 
 .title-container > h2 {
-    color: #ffffff;
+    color: black;
     padding: 0;
     margin: 0;
     word-wrap: break-word;
@@ -2143,6 +2143,7 @@ section#video > div:nth-child(1) video {
     border-radius: 7px;
     width: 100%;
     height: auto;
+    box-shadow: 0 0.1rem 0.5rem 0.2rem rgb(0 0 0 / 30%);
 }
 
 .video-button {
