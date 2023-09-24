@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: #fed931;
+    background-color: #babebd;
 
 }
 
@@ -159,7 +159,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fed931;
+    background-color: #babebd;
     padding: 1.5rem 0;
     z-index: 1000;
 }
@@ -187,7 +187,7 @@ header .container nav {
     top: -100rem;
     left: 0;
     width: 100%;
-    background-color: #fed931;
+    background-color: #babebd;
     padding: 1.6rem;
 }
 
@@ -1704,7 +1704,7 @@ input::placeholder {
 .properties > div {
     width: 100%;
     height: 115px;
-    background-color: #fed931;
+    background-color: #babebd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1978,7 +1978,7 @@ input::placeholder {
     overflow: hidden;
     width: 100%;
     height: 50vh;
-    background-color: #fed931; /* Change the background color as needed */
+    background-color: #babebd; /* Change the background color as needed */
 }
 
 .animate-text1 {
@@ -2064,13 +2064,16 @@ header + section {
     z-index: -1;
 }
 
+section#video {
+    padding: 6rem 3rem !important;
+}
+
 section#video > div:nth-child(1) {
     background-color: rgb(0, 0, 0);
     color: #ffffff;
-    border-radius: 0.5rem;
-    height: 42vw;
+    border-radius: 7px;
+    padding: 50px 40px;
     margin: auto;
-    padding: 0 50px;
     cursor: pointer;
 }
 
@@ -2085,8 +2088,19 @@ section#video > div:nth-child(1) {
     }
 }
 
-@media screen and (max-width: 991px)  {
+@media screen and (min-width: 768px) {
+    .title-container > p {
+        font-size: 1.8rem !important;
+    }
 
+    .title-container > h2 {
+        font-size: 51px !important;
+        max-width: 8ch !important;
+    }
+
+    section#video > div:nth-child(1) video {
+        width: 55vw !important;
+    }
 }
 
 .arrow-container {
@@ -2108,11 +2122,11 @@ section#video > div:nth-child(1) {
 
 .title-container > p {
     color: #ffffff;
+    font-size: 14px;
 }
 
 .title-container > h2 {
     color: #ffffff;
-    max-width: 8ch;
     padding: 0;
     margin: 0;
     word-wrap: break-word;
@@ -2120,14 +2134,14 @@ section#video > div:nth-child(1) {
     font-weight: 700;
     letter-spacing: -0.0925rem;
     text-transform: none;
-    font-size: 51px;
+    font-size: 23px;
 }
 
 section#video > div:nth-child(1) video {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     border-radius: 7px;
-    width: 55vw;
+    width: 100%;
     height: auto;
 }
 
@@ -2148,4 +2162,85 @@ section#video > div:nth-child(1) video {
     align-items: center;
     cursor: pointer;
     -webkit-transform: translate3d(0, 0, 0);
+}
+
+header + section {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/medical-laboratory.jpg");
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+header + section > div {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+header + section:hover > div {
+    opacity: 1;
+}
+
+header + section > div > h1 {
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    width: 50vw;
+}
+
+header + section > div > p {
+    font-size: 3vw;
+    font-weight: 500;
+    word-spacing: 2px;
+    width: 70vw;
+    overflow: hidden;
+}
+
+section#devices {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+section#devices > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#devices > div > h1 {
+    color: #282626 !important;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 35vw;
+    text-align: center;
+}
+
+section#devices > div > p {
+    color: #333030 !important;;
+    font-size: 30px;
+    font-weight: 500;
+    word-spacing: 2px;
+    width: 45vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+section#devices > div > button {
+    width: 140px;
+    height: 45px;
+    font-size: 17px;
+    padding: inherit;
 }
