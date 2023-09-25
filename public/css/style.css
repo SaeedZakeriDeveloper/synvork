@@ -93,11 +93,11 @@ p {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 6rem 25px;
 }
 
 .btn {
-    background-color: white;
+    background-color: black;
     color: var(--textColor);
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -192,7 +192,7 @@ header .container nav {
 }
 
 header .container nav.active {
-    top: 6.9rem;
+    top: 14rem;
     transition: all 1.2s ease-in-out;
 }
 
@@ -212,8 +212,12 @@ header .container nav ul li a {
 
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
-    background-color: white;
-    color: black;
+    color: white;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+    background-color: black;
 }
 
 @media (min-width: 707px) {
@@ -713,10 +717,6 @@ header .container nav ul li a:hover {
     animation: review-scale .5s ease-in-out forwards;
 }
 
-.reviews .review-box.active img {
-    animation: review-show .5s ease-in-out forwards;
-}
-
 .reviews .review-box.active .profile-desc {
     animation: review-content-in .4s ease-in-out forwards;
 }
@@ -776,18 +776,6 @@ header .container nav ul li a:hover {
     to {
         opacity: 0;
         transform: translateY(-100%);
-    }
-}
-
-@keyframes review-show {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(1);
     }
 }
 
@@ -878,6 +866,7 @@ header .container nav ul li a:hover {
 
 /* End Pricing Section  */
 /* Start News Section  */
+
 .news .container h2 {
     text-align: center;
 }
@@ -913,6 +902,7 @@ header .container nav ul li a:hover {
 
 .news .news-container .new .new-text p {
     margin: 2rem 0;
+    color: white !important;
     max-width: 35.7rem;
     min-width: 100%;
 }
@@ -932,12 +922,6 @@ header .container nav ul li a:hover {
 
 /* End News Section  */
 /* Start Contact Section  */
-
-.contact > div {
-    /* background-image: url("../img/woman-customer-service-worker-call-center-operator-with-phone-headset-beautiful-young-call-center-assistant-smiling-isolated.jpg"); */
-    height: 500px;
-    background-size: cover;
-}
 
 .contact h2 {
     color: #FDFDFD;
@@ -967,6 +951,11 @@ header .container nav ul li a:hover {
 
 /* End Contact Section  */
 /* Start Footer Section  */
+
+footer {
+    padding: 0 25px;
+}
+
 footer .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
@@ -1052,6 +1041,7 @@ footer .copyright {
 }
 
 footer .copyright p {
+    color: white !important;
     text-align: center;
 }
 
@@ -1288,7 +1278,7 @@ footer .copyright p span {
 }
 
 .centerBox > h2 {
-    color: rgb(33, 37, 41);
+    color: white;
     font-size: 3.16rem;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -1412,7 +1402,7 @@ button:not(button.franceBtn, button.unitedBtn, button.video-button):hover {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -2069,12 +2059,12 @@ section#video {
 }
 
 section#video > div:nth-child(1) {
-    background-color: white;
     color: black;
     border-radius: 7px;
     padding: 50px 40px;
     margin: auto;
     cursor: pointer;
+    background-color: white;
 }
 
 @media screen and (min-width: 64.0625rem) and (pointer: fine) and (hover: hover) {
@@ -2174,7 +2164,7 @@ header + section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 50px;
+    padding: 150px 50px 20px 50px;
 }
 
 header + section > div {
@@ -2188,7 +2178,7 @@ header + section:hover > div {
 
 header + section > div > h1 {
     color: white;
-    font-size: 5vw;
+    font-size: 51px;
     font-weight: bold;
     letter-spacing: 3px;
     word-spacing: 7px;
@@ -2196,50 +2186,41 @@ header + section > div > h1 {
 }
 
 header + section > div > p {
-    font-size: 3vw;
+    font-size: 30px;
     font-weight: 500;
     word-spacing: 2px;
     width: 70vw;
     overflow: hidden;
 }
 
-section#devices {
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+section#devices > div > div:nth-child(1) {
+    width: 350px;
+    max-width: 100%;
 }
 
-section#devices > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+section#devices > div > div:nth-child(2) {
+    width: 700px;
+    max-width: 100%;
 }
 
-section#devices > div > h1 {
-    color: #282626 !important;
+section#devices h1 {
+    color: white !important;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
-    width: 35vw;
     text-align: center;
 }
 
-section#devices > div > p {
-    color: #333030 !important;;
+section#devices p {
+    color: white !important;;
     font-size: 30px;
     font-weight: 500;
     word-spacing: 2px;
-    width: 45vw;
     overflow: hidden;
     text-align: center;
 }
 
-section#devices > div > button {
+section#devices button {
     width: 140px;
     height: 45px;
     font-size: 17px;

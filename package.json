@@ -2,7 +2,7 @@
     "name": "api",
     "version": "1.0.0",
     "description": "emailTest",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
       "start": "node app.js"
     },
@@ -14,4 +14,3 @@
       "nodemailer": "^6.9.4"
     }
   }
-  
