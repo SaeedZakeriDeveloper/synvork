@@ -12,7 +12,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fed931;
+    background-color: black;
 }
 
 section::before {
@@ -22,7 +22,7 @@ section::before {
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: #fed931;
+    background-color: black;
 }
 
 .container {
