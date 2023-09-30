@@ -224,7 +224,7 @@ header .container nav ul li a:hover {
     background-color: black;
 }
 
-@media (min-width: 707px) {
+@media (min-width: 768px) {
     header {
         padding: 0;
     }
@@ -1398,9 +1398,8 @@ col-2 {
 }
 
 .franceBtn {
-    width: 70px;
-    height: 45px;
-    background: url(../img/France_language.png);
+    padding: 20px 20px !important;
+    background: url(../img/france.png);
     background-size: cover;
 }
 
@@ -1783,11 +1782,6 @@ input::placeholder {
     animation-name: fadeInUp
 }
 
-.langBtn {
-    margin-left: 15px;
-}
-
-
 .showBox {
     opacity: 0;
     transition: opacity 1.5s ease-in-out; /* Add any other desired animation properties */
@@ -2108,6 +2102,12 @@ section#contact a {
     box-shadow: 0 0px 10px #cecece;
     margin: 40px 10px;
     padding: 0 !important;
+    transform: rotate(0deg);
+}
+
+.service-box:hover{
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
 }
 
 .service-box > div:nth-child(1) {
