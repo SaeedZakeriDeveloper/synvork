@@ -174,6 +174,10 @@ header .container {
     header .container {
         width: 100%;
     }
+
+    #news .new {
+        margin-bottom: 50px;
+    }
 }
 
 header .container .menu-bar {
@@ -348,167 +352,7 @@ header .container nav ul li a:hover {
 } */
 
 /* End Home Section  */
-/* Start Services Section  */
-.services {
-    border-bottom: .2rem solid #f0f0f0;
-    position: relative;
-}
 
-.services .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
-    gap: 5rem;
-}
-
-.services .container .serv-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.services .container .serv-box .serv-heading {
-    text-align: center;
-}
-
-.services .container .serv-box .serv-heading h3 {
-    font-size: 3.3rem;
-    color: white
-}
-
-.services .container .serv-box .serv-heading h4 {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--textColor);
-    text-transform: uppercase;
-}
-
-.services .container .serv-box .serv-img img {
-    max-width: 100%;
-    border-radius: 5%;
-}
-
-.services .container .serv-box p {
-    max-width: 51.5rem;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
-}
-
-.services .container .serv-box .list {
-    margin-bottom: 5rem;
-}
-
-.services .container .serv-box .list ul li {
-    font-weight: 300;
-    font-size: 1.6rem;
-    color: var(--blueColor);
-    text-transform: capitalize;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    position: relative
-}
-
-.services .container .serv-box .list ul li::before {
-    content: "• ";
-    position: absolute;
-    top: 0;
-    left: -1rem;
-}
-
-.services .container .serv-box a {
-    max-width: 21.6rem;
-    margin: auto;
-    margin-bottom: 5rem;
-}
-
-.services .like {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .services .container .serv-box .list {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .services .container .serv-box .serv-img {
-        text-align: center;
-    }
-
-    .services .container .serv-box p {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .services .like {
-        position: absolute;
-        bottom: -80px;
-        left: calc(50% - 15rem / 2);
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--whiteColor);
-        box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 20%), 1px 0rem 1rem rgb(0 0 0 / 20%);
-    }
-
-    .services .like i {
-        color: var(--blueColor);
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .services .container .serv-box .list {
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 1200px) {
-    .services .container .serv-box .list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .services .container .serv-box:nth-child(1) .serv-img {
-        text-align: left;
-    }
-
-    .services .container .serv-box:nth-child(2) .serv-img {
-        text-align: right;
-    }
-
-    .services .container .serv-box:nth-child(1) .list {
-        padding-right: 4rem;
-    }
-
-    .services .container .serv-box:nth-child(2) .list {
-        padding-left: 4rem;
-    }
-
-    .services .container .serv-box p {
-        text-align: left;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .services .container .serv-box:nth-child(2) p {
-        margin-left: auto;
-    }
-
-    .services .container .serv-box .list ul li {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    .services .container .serv-box:nth-child(2) .list {
-        padding-left: 11rem;
-    }
-}
-
-/* End Services Section  */
 /* Start About Section  */
 .about {
     padding: 10rem 0;
@@ -1954,13 +1798,15 @@ input::placeholder {
 }
 
 /*upBtn*/
-#myBtn {
+#upBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 47px;
+    color: gray;
 }
 
 .animation-container1 {
@@ -2079,6 +1925,15 @@ section#video > div:nth-child(1) {
 }
 
 @media screen and (min-width: 768px) {
+
+    header + section > div > h1 {
+        font-size: 51px !important;
+    }
+
+    header + section > div > p {
+        font-size: 30px !important;
+    }
+
     .title-container > p {
         font-size: 1.8rem !important;
     }
@@ -2091,6 +1946,18 @@ section#video > div:nth-child(1) {
     section#video > div:nth-child(1) video {
         width: 55vw !important;
     }
+}
+
+@media screen and (max-width: 534px) {
+
+    header + section > div > h1 {
+        font-size: 30px !important;
+    }
+
+    header + section > div > p {
+        font-size: 19px !important;
+    }
+
 }
 
 .arrow-container {
@@ -2178,7 +2045,7 @@ header + section:hover > div {
 
 header + section > div > h1 {
     color: white;
-    font-size: 51px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: 3px;
     word-spacing: 7px;
@@ -2186,24 +2053,28 @@ header + section > div > h1 {
 }
 
 header + section > div > p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     word-spacing: 2px;
     width: 70vw;
     overflow: hidden;
+    color: white;
 }
 
-section#devices > div > div:nth-child(1) {
+section#aboutUs > div > div:nth-child(1),
+section#contact > div > div:nth-child(1) {
     width: 350px;
     max-width: 100%;
 }
 
-section#devices > div > div:nth-child(2) {
+section#aboutUs > div > div:nth-child(2),
+section#contact > div > div:nth-child(2) {
     width: 700px;
     max-width: 100%;
 }
 
-section#devices h1 {
+section#aboutUs h1,
+section#contact h1 {
     color: white !important;
     font-size: 50px;
     font-weight: 700;
@@ -2211,7 +2082,8 @@ section#devices h1 {
     text-align: center;
 }
 
-section#devices p {
+section#aboutUs p,
+section#contact p {
     color: white !important;;
     font-size: 30px;
     font-weight: 500;
@@ -2220,9 +2092,51 @@ section#devices p {
     text-align: center;
 }
 
-section#devices button {
+section#aboutUs button,
+section#contact a {
     width: 140px;
     height: 45px;
     font-size: 17px;
     padding: inherit;
+}
+
+.service-box {
+    width: 340px;
+    height: 444px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0px 10px #cecece;
+    margin: 40px 10px;
+    padding: 0 !important;
+}
+
+.service-box > div:nth-child(1) {
+    height: 30%;
+    background: #cecece;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box > div:nth-child(1) > i {
+    font-size: 86px;
+}
+
+.service-box > div:nth-child(2) {
+    padding: 30px;
+    background-color: white;
+    height: 100%;
+}
+
+.service-box > div:nth-child(2) > h3 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.service-box > div:nth-child(2) > p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
 }
