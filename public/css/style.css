@@ -2164,30 +2164,6 @@ section#contact > div:nth-child(2) > a:hover {
     }
 }
 
-@media (min-width: 1518px) {
-    section#contact > div:nth-child(2) {
-        padding: 30px 215px 0 115px;
-    }
-}
-
-@media (min-width: 1229px) {
-    section#contact > div:nth-child(2) {
-        padding: 30px 150px 0 50px;
-    }
-}
-
-@media (min-width: 1037px) {
-    section#contact > div:nth-child(2) {
-        padding: 30px 90px 0 30px;
-    }
-}
-
-@media (min-width: 992px) {
-    section#contact > div:nth-child(2) {
-        padding: 30px 70px 0 20px;
-    }
-}
-
 @media (max-width: 570px) {
     section#contact > div:nth-child(2) {
         padding: 20px;
@@ -2197,6 +2173,30 @@ section#contact > div:nth-child(2) > a:hover {
     section#contact > div:nth-child(2) > h2,
     section#contact > div:nth-child(2) > p {
         text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 70px 0 20px;
+    }
+}
+
+@media (min-width: 1037px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 90px 0 30px;
+    }
+}
+
+@media (min-width: 1229px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 150px 0 50px;
+    }
+}
+
+@media (min-width: 1518px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 215px 0 115px;
     }
 }
 
