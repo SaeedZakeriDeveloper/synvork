@@ -244,7 +244,6 @@ header .container nav ul li a:hover {
     header .container nav ul {
         display: flex;
         align-items: center;
-        /*column-gap: 1rem;*/
     }
 
     header .container nav ul li {
@@ -407,10 +406,6 @@ header .container nav ul li a:hover {
 
 .about .container .about-container .box p {
     margin-top: 2rem;
-}
-
-.services .fa-thumbs-up.active {
-    animation: rotation .8s linear;
 }
 
 @keyframes rotation {
@@ -749,6 +744,8 @@ header .container nav ul li a:hover {
     color: white !important;
     max-width: 35.7rem;
     min-width: 100%;
+    font-size: 21px;
+    font-weight: 400;
 }
 
 .news .news-container .new .new-text a {
@@ -766,32 +763,6 @@ header .container nav ul li a:hover {
 
 /* End News Section  */
 /* Start Contact Section  */
-
-.contact h2 {
-    color: #FDFDFD;
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.contact p {
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 26px;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-
-.contact span {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2.2px;
-    background-color: green;
-    padding: 12px 34px;
-    border-radius: 4px;
-}
 
 /* End Contact Section  */
 /* Start Footer Section  */
@@ -1150,7 +1121,10 @@ button {
     cursor: pointer;
 }
 
-button:not(button.franceBtn, button.unitedBtn, button.video-button):hover {
+button:not(button.franceBtn, button.unitedBtn, button.video-button,
+ button.carousel-control-prev,
+ button.carousel-control-next
+):hover {
     background-color: #45a049;
 }
 
@@ -1188,10 +1162,6 @@ button:not(button.franceBtn, button.unitedBtn, button.video-button):hover {
 
     .checkbox-container label {
         flex-basis: 50%;
-    }
-
-    .services .container {
-        gap: 0;
     }
 
     .video-container {
@@ -1397,19 +1367,6 @@ col-2 {
     animation-fill-mode: forwards;
 }
 
-.franceBtn {
-    padding: 20px 20px !important;
-    background: url(../img/france.png);
-    background-size: cover;
-}
-
-.unitedBtn {
-    width: 70px;
-    height: 45px;
-    background: url(../img/Uk_language.png);
-    background-size: cover;
-}
-
 @keyframes shake {
 
     0%,
@@ -1599,19 +1556,13 @@ input::placeholder {
     max-width: 100%;
     max-height: 100%;
     margin-top: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px gray;
 }
 
 .Information img {
-    /*--s: 520px; !* the image size *!*/
-
-    /*width: 520px;*/
-    /*height: 346px; !* better than aspect-ratio in case the image has a height attribute *!*/
     box-sizing: border-box;
     object-fit: cover;
-    /*background: var(--i) 50%/cover #000;*/
-
-    background-blend-mode: luminosity; /* we take the luminosity of the image and we use the hue/staturation of back color so we end having hsl(0 0% L)*/
+    background-blend-mode: luminosity;
     transition: .5s;
     cursor: pointer;
 }
@@ -2055,20 +2006,17 @@ header + section > div > p {
     color: white;
 }
 
-section#aboutUs > div > div:nth-child(1),
-section#contact > div > div:nth-child(1) {
+section#aboutUs > div > div:nth-child(1) {
     width: 350px;
     max-width: 100%;
 }
 
-section#aboutUs > div > div:nth-child(2),
-section#contact > div > div:nth-child(2) {
+section#aboutUs > div > div:nth-child(2) {
     width: 700px;
     max-width: 100%;
 }
 
-section#aboutUs h1,
-section#contact h1 {
+section#aboutUs h1 {
     color: white !important;
     font-size: 50px;
     font-weight: 700;
@@ -2076,8 +2024,7 @@ section#contact h1 {
     text-align: center;
 }
 
-section#aboutUs p,
-section#contact p {
+section#aboutUs p {
     color: white !important;;
     font-size: 30px;
     font-weight: 500;
@@ -2086,57 +2033,170 @@ section#contact p {
     text-align: center;
 }
 
-section#aboutUs button,
-section#contact a {
+section#aboutUs button {
     width: 140px;
     height: 45px;
     font-size: 17px;
     padding: inherit;
 }
 
-.service-box {
-    width: 340px;
-    height: 444px;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 0px 10px #cecece;
-    margin: 40px 10px;
-    padding: 0 !important;
-    transform: rotate(0deg);
+.services {
+    padding-top: 0 !important;
 }
 
-.service-box:hover{
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-}
-
-.service-box > div:nth-child(1) {
-    height: 30%;
-    background: #cecece;
-    color: white;
+#carouselExampleIndicators {
+    background-color: black;
+    height: 450px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 140px;
 }
 
-.service-box > div:nth-child(1) > i {
-    font-size: 86px;
-}
-
-.service-box > div:nth-child(2) {
-    padding: 30px;
+.service-box {
+    width: 276px;
     background-color: white;
-    height: 100%;
+    height: 274px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    margin: 0px 20px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-.service-box > div:nth-child(2) > h3 {
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
+.service-box:nth-child(1) {
+    margin-left: 20px;
 }
 
-.service-box > div:nth-child(2) > p {
-    color: black;
-    font-size: 20px;
+.service-box > h2 {
+    color: #54595F;
+    font-family: "Lato", Sans-serif;
+    font-weight: 600;
+    padding: 0;
+    line-height: 1;
+    font-size: 29px !important;
     text-align: center;
+    margin: 0px 0px 20px 0px;
 }
+
+.service-box > p {
+    color: #7A7A7A;
+    font-family: Roboto, Sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px !important;
+}
+
+section#contact > div:nth-child(1) {
+    background-image: url("../img/contact-icons-keyboard-button.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 490px;
+}
+
+section#contact > div:nth-child(2) {
+    background-color: white;
+    height: 490px;
+    padding: 30px 30vw 0 10vw;
+}
+
+section#contact > div:nth-child(2) > h2 {
+    color: #9AA8BA;
+    font-family: "Prompt", Sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 44px;
+    margin: 60px 0 22px 0;
+}
+
+section#contact > div:nth-child(2) > p {
+    color: #5F5B5B;
+    font-family: "Prompt", Sans-serif;
+    font-size: 29px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+}
+
+section#contact > div:nth-child(2) > a {
+    background-color: #9AA8BA;
+    padding: 12px 28px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+section#contact > div:nth-child(2) > a:hover {
+    background-color: white;
+    color: #9AA8BA;
+    border: 1px solid #9AA8BA;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 6% !important;
+}
+
+.languageBtn {
+    margin-left: 37px;
+    margin-bottom: -10px;
+}
+
+.languageBtn > select {
+    margin: 0;
+}
+
+@media (max-width: 690px) {
+    .services .carousel-item .service-box:nth-child(2),
+    .services .carousel-item .service-box:nth-child(3),
+    .services .carousel-item .service-box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .services .carousel-item .service-box:nth-child(3),
+    .services .carousel-item .service-box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .services .carousel-item .service-box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (min-width: 1518px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 215px 0 115px;
+    }
+}
+
+@media (min-width: 1229px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 150px 0 50px;
+    }
+}
+
+@media (min-width: 1037px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 90px 0 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    section#contact > div:nth-child(2) {
+        padding: 30px 70px 0 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    section#contact > div:nth-child(2) {
+        padding: 20px;
+        text-align: center;
+    }
+
+    section#contact > div:nth-child(2) > h2,
+    section#contact > div:nth-child(2) > p {
+        text-align: center;
+    }
+}
+

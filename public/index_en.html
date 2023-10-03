@@ -8,8 +8,6 @@
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Termina&display=swap">
-
-
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/normalize.css">
@@ -28,18 +26,20 @@
             <div class="logo">
                 <a href="#home"><img src="img/LOGO.jpg " alt="logo" style=" width: 11rem ;height : auto;"></a>
             </div>
+            <div class="languageBtn">
+                <select id="languageSelect" onchange="changeLanguage()" class="form-select"
+                        aria-label="Default select example">
+                    <option value="1" selected>France</option>
+                    <option value="2">English</option>
+                </select>
+            </div>
         </div>
         <i class="fas fa-bars menu-bar"></i>
-        <nav>
+        <nav style="margin-bottom: -7.5px;">
             <ul style="margin-bottom: 0 !important;">
                 <li><a href="#home" data-lang="home">HOME</a></li>
                 <li><a href="#aboutUs" data-lang="aboutUs">ABOUT US</a></li>
                 <li><a href="#contact" data-lang="contact">CONTACT</a></li>
-                <li>
-                    <a>
-                        <button id="langBtn" class="franceBtn" onclick="changeLanguage()" style="width: auto !important;"></button>
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>
@@ -57,14 +57,9 @@
     </div>
 </section>
 
-<section id="aboutUs" class="mt-5">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center" style="margin-bottom: 30px;">
-            <h1>
-                ABOUT US
-            </h1>
-        </div>
-        <div class="text-center" style="margin-bottom: 50px;">
+<section class="Information" style="margin-top: 120px !important;">
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center ">
+        <div class="col-12 col-lg-5 order-1 order-lg-0 text-center text-lg-start mt-5 mt-lg-0 textBox animated fadeInUpBox">
             <p>
                 Established in 2023, SYNVORK is a dynamic and forward-thinking company which is Unlocking Excellence
                 in Pharmaceutical Machinery Refurbishment. It is based in France with a vision to reshape the
@@ -73,63 +68,134 @@
                 pharmaceutical machinery refurbishing.
             </p>
         </div>
-        <!--        <div class="text-center">-->
-        <!--            <button>Click to see</button>-->
-        <!--        </div>-->
+        <div class="col-12 col-lg-5 order-0 order-lg-1 d-flex justify-content-center">
+            <img src="./img/3d-covid19-vaccine.jpg" alt="Your Image" class="animated fadeInUpBox">
+        </div>
     </div>
 </section>
 
-<section class="services" id="services">
-    <div class="row justify-content-around">
-        <div class="service-box col-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fa fa-refresh" aria-hidden="true"></i>
+<section class="services">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Machinery Refurbishment</h2>
+                        <p>
+                            Comprehensive refurbishment of pharmaceutical machinery to restore them to optimal working
+                            condition.
+                            Inspection, cleaning, repair, and replacement of worn or damaged parts.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Testing and Validation</h2>
+                        <p>
+                            Conducting testing and validation services to ensure refurbished machinery align with
+                            regulatory
+                            requirements and industry standards.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Technical Support</h2>
+                        <p>
+                            Ongoing technical support and assistance for clients, ensuring smooth machinery operation.
+                            Maintenance services to keep equipment in top condition.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Spare Parts Availability</h2>
+                        <p>
+                            Providing access to a range of spare parts for pharmaceutical machinery to minimize downtime
+                            in case
+                            of component replacement.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Machinery Refurbishment</h3>
-                <p class="m-0">
-                    Comprehensive refurbishment of pharmaceutical machinery to restore them to optimal working
-                    condition.
-                    Inspection, cleaning, repair, and replacement of worn or damaged parts
-                </p>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Quality Assurance</h2>
+                        <p>
+                            Rigorous quality control processes to guarantee the reliability, accuracy, and safety of
+                            refurbished equipment.
+                            Compliance with industry regulations and standards.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Cost Analysis</h2>
+                        <p>
+                            Providing cost analysis and comparisons between purchasing new machinery and opting for
+                            refurbished equipment.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Training and Education</h2>
+                        <p>
+                            Offering training programs and educational resources to help clients maximize the benefits
+                            of refurbished machinery.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Research and Development</h2>
+                        <p>
+                            Investing in research and development to enhance refurbishing techniques and adapt to
+                            evolving industry needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Continuous Improvement</h2>
+                        <p>
+                            Commitment to continuous improvement in refurbishing processes, technology, and service
+                            delivery.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Technical Expertise</h2>
+                        <p>
+                            Access to a team of experts with in-depth knowledge of pharmaceutical machinery and industry
+                            trends.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Quality Documentation</h2>
+                        <p>
+                            Providing comprehensive documentation of the refurbishing process, including inspection
+                            reports and quality certificates.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Customer Collaboration</h2>
+                        <p>
+                            Collaborating closely with clients to understand their unique requirements and deliver
+                            tailored solutions.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="service-box col-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-            <div>
-                <h3>Testing and Validation</h3>
-                <p class="m-0">
-                    Conducting testing and validation services to ensure refurbished machinery align with regulatory
-                    requirements and industry standards
-                </p>
-            </div>
-        </div>
-        <div class="service-box col-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fa-solid fa-headset"></i>
-            </div>
-            <div>
-                <h3>Technical Support</h3>
-                <p class="m-0">
-                    Ongoing technical support and assistance for clients, ensuring smooth machinery operation.
-                    Maintenance services to keep equipment in top condition
-                </p>
-            </div>
-        </div>
-        <div class="service-box col-12 col-md-6 col-lg-3">
-            <div>
-                <i class="fa-solid fa-hand"></i>
-            </div>
-            <div>
-                <h3>Spare Parts Availability</h3>
-                <p class="m-0">
-                    Providing access to a range of spare parts for pharmaceutical machinery to minimize downtime in case
-                    of component replacement
-                </p>
-            </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </section>
 
@@ -251,35 +317,34 @@
             <div class="box">
                 <i class="fas fa-hand-holding"></i>
                 <h3>Established Excellence</h3>
-                <p>Our refurbished machinery undergoes comprehensive testing and rigorous quality assurance procedures.
-                    Clients can have full confidence that the equipment they receive has undergone thorough inspection,
-                    repairs, and testing to not only meet but surpass industry standards. This established excellence
-                    guarantees reliability in production processes.</p>
+                <p>
+                    Refurbished machinery provides reliable production processes through rigorous testing and
+                    inspections, increasing client confidence in equipment surpassing industry standards.
+                </p>
             </div>
             <div class="box">
                 <i class="fas fa-dollar-sign"></i>
                 <h3>Affordable Efficiency</h3>
-                <p>Acquiring new pharmaceutical machinery often entails a substantial capital investment.
-                    Opting for refurbished machinery presents a budget-friendly alternative,
-                    all while maintaining top-notch quality. Our diligently refurbished equipment
-                    delivers outstanding performance at a fraction of the cost of brand-new machines.</p>
+                <p>
+                    Refurbished pharmaceutical machinery offers a cost-effective option with excellent performance,
+                    saving on the high capital investment required for new equipment.
+                </p>
             </div>
             <div class="box">
                 <i class="fab fa-bitbucket"></i>
                 <h3>Customization</h3>
-                <p>At SYNVORK, we recognize that a universal solution isn't always the answer.
-                    Our refurbished machines can frequently be tailored to accommodate precise production
-                    requirements. Whether it involves adapting to unique product specifications or seamlessly
-                    integrating into pre-existing production lines, we offer bespoke solutions.</p>
+                <p>
+                    SYNVORK provides customized refurbished machines that can be adapted to specific production needs,
+                    including unique product specifications and integration into existing production lines.
+                </p>
             </div>
             <div class="box">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Rapid Implementation</h3>
-                <p>As you know in the realm of pharmaceutical production, time is very important because it is equal to
-                    capital.
-                    Refurbished machines offer swift availability and can be put into operation more expeditiously
-                    than new ones, enabling businesses to optimize their operations and promptly address market
-                    demands.</p>
+                <p>
+                    Refurbished machines in pharmaceutical production save time and money by allowing businesses to
+                    quickly meet market demands, making them more efficient than new machines.
+                </p>
             </div>
         </div>
     </div>
@@ -287,59 +352,68 @@
 
 <section class="news" id="news">
     <div class="container">
-        <h2 style="color: white !important;">News</h2><br><br><br>
+        <h2 style="color: white !important;">SYNVORK's offerings</h2><br><br><br>
         <div class="news-container">
             <div class="new">
-                <img src="./img/3696093.jpg" alt="" class="animated fadeInLeftBox " style="width : 100% ; height: 50%">
+                <img src="./img/plant-picture-clean-room-equipment-stainless-steel-machines (2).jpg" alt=""
+                     class="animated fadeInLeftBox " style="width : 100% ; height: 50%">
                 <div class="new-text animated fadeInUpBox">
-                    <h3>New Technology Restores Cold Sensation in Amputees’ Phantom Limbs</h3>
-                    <p>Researchers at Johns Hopkins Applied Physics Laboratory (APL) have developed one of the smallest,
-                        most intense, and fastest refrigeration devices, known as the wearable thin-film…</p>
+                    <h3>Solid Dosage Form Machines</h3>
+                    <p>
+                        . Blistering Machines<br>
+                        . Cartoning Machines<br>
+                        . Tablet Press Machines<br>
+                        . Tablet Counter Machines<br>
+                        . Capsule Filling Machines
+                    </p>
                 </div>
             </div>
             <div class="new">
-                <img src="./img/lab-technician-doctor-analyzing-virus-evolution-looking-digital-tablet-team-scientists-conducting-vaccine-development-using-high-tech-researching-treatment-against-covid19-pandemic.jpg"
+                <img src="./img/steel-cameras-high-pressure-control-panel-with-buttons-chrome-equipment.jpg"
                      alt="" class="animated fadeInUpBox" style="width : 100% ; height: 50%">
                 <div class="new-text animated fadeInUpBox">
-                    <h3>Transformative Technology for Deep Tissue Monitoring</h3>
-                    <p>Improved measurement of tissue stiffness could lead to better treatments for various conditions,
-                        including cancer and sports injuries. A group of engineers at the University…</p>
+                    <h3>Injectable Lines</h3>
+                    <p>
+                        .Vial Filling Lines<br>
+                        .Ampoule Filling Lines<br>
+                        .Prefilled Syringe Lines<br>
+                        .Pen Assembler Machines<br>
+                        .Cartridge Filling Machines<br>
+                    </p>
                 </div>
             </div>
             <div class="new">
-                <img src="./img/biotechnology-specialist-laboratory-conducting-experiments.jpg" alt=""
+                <img src="./img/manufacture-steel-machine-with-control-computer-clear-room.jpg" alt=""
                      class="animated fadeInRightBox"
                      style="width : 100% ; height: 50%">
                 <div class="new-text animated fadeInUpBox">
-                    <h3>Engineers Develop the First Fully Integrated Wearable Ultrasound System for Deep-Tissue
-                        Monitoring</h3>
-                    <p>A team of engineers from UC San Diego has successfully created a fully integrated system for
-                        deep-tissue monitoring. A group of engineers from the University…</p>
+                    <h3>Laboratory Equipment</h3>
+                    <p>
+                        .Ovens<br>
+                        .Advanced Freezers <span style="font-size: 18px">(-80°c and -150°c)</span><br>
+                        .Centrifuges<br>
+                        .HPLC <span style="font-size: 18px">(High-Performance Liquid Chromatography)</span><br>
+                        .UPLC <span style="font-size: 18px">(Ultra-Performance Liquid Chromatography)</span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="contact" id="contact">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center" style="margin-bottom: 30px;">
-            <h1>
-                Join Us on Our Journey
-            </h1>
-        </div>
-        <div class="text-center" style="margin-bottom: 50px;">
-            <p>
-                Together, we can transform the pharmaceutical
-                manufacturing landscape and ensure a more sustainable, cost-effective, and innovative future.
-                For inquiries, partnerships, or to learn more about our services, please contact us.
-            </p>
-        </div>
-        <div class="text-center">
-            <a class="" href="contactUs.html">
-                <span class="">Contact</span>
-            </a>
-        </div>
+<section class="contact d-lg-flex" id="contact">
+    <div class="col-lg-7">
+    </div>
+    <div class="col-lg-5">
+        <h2>
+            Join Us on Our Journey
+        </h2>
+        <p>
+            For inquiries, partnerships or to learn more about our services, contact us
+        </p>
+        <a class="" href="contactUs.html">
+            <span class="">Contact us</span>
+        </a>
     </div>
 </section>
 <footer>

@@ -38,7 +38,7 @@ section::before {
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: green;
+    background: gray;
     z-index: 2;
     padding: 40px;
     display: flex;
@@ -182,7 +182,7 @@ section::before {
 .container .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
-    background: green;
+    background: gray;
     color: black;
     border: none;
     max-width: 150px;
@@ -190,8 +190,9 @@ section::before {
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background: black;
-    color: green;
+    background: white;
+    color: #333030;
+    border: 1px solid #333030;
 }
 
 /* Responsive Settings */
@@ -203,12 +204,14 @@ section::before {
         margin: 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     }
+
     .container .contactInfo {
         top: 0;
         height: 550px;
         position: relative;
         box-shadow: none;
     }
+
     .container .contactForm {
         position: relative;
         width: calc(100% - 350px);
@@ -222,21 +225,24 @@ section::before {
 
 @media (max-width: 991px) {
     section {
-        background: #fff38e;
+        background: black;
     }
 
     section::before {
         display: none;
     }
+
     .container {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .container .contactForm {
         position: relative;
         width: 100%;
         height: auto;
     }
+
     .container .contactInfo {
         position: relative;
         width: 100%;
@@ -244,6 +250,7 @@ section::before {
         flex-direction: row;
         top: 0;
     }
+
     .container .contactInfo ul.sci {
         position: relative;
         display: flex;
@@ -254,6 +261,6 @@ section::before {
     color: red !important;
 }
 
-.valid{
+.valid {
     border-bottom: none;
 }

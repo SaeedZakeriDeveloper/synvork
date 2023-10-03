@@ -113,15 +113,10 @@ function checkValidation(id) {
 }
 
 function changeLanguage() {
-    let element = document.getElementById("langBtn");
-    let className = element.getAttribute("class");
-    if (className == 'franceBtn') {
-        element.classList.remove('franceBtn');
-        element.classList.add('unitedBtn');
+    let element = document.getElementById("languageSelect");
+    if (element.value == '1') {
         window.location.href = "index.html";
-    } else if (className == 'unitedBtn') {
-        element.classList.remove('unitedBtn');
-        element.classList.add('franceBtn');
+    } else if (element.value == '2') {
         window.location.href = "index_en.html";
     }
 }
