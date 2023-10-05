@@ -1155,40 +1155,6 @@ header + section > div > p {
     color: white;
 }
 
-section#aboutUs > div > div:nth-child(1) {
-    width: 350px;
-    max-width: 100%;
-}
-
-section#aboutUs > div > div:nth-child(2) {
-    width: 700px;
-    max-width: 100%;
-}
-
-section#aboutUs h1 {
-    color: white !important;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-section#aboutUs p {
-    color: white !important;;
-    font-size: 30px;
-    font-weight: 500;
-    word-spacing: 2px;
-    overflow: hidden;
-    text-align: center;
-}
-
-section#aboutUs button {
-    width: 140px;
-    height: 45px;
-    font-size: 17px;
-    padding: inherit;
-}
-
 .services {
     padding-top: 0 !important;
 }
