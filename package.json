@@ -1,12 +1,12 @@
 {
     "name": "api",
     "version": "1.0.0",
-    "description": "emailTest",
+    "description": "synvork",
     "main": "main.js",
     "scripts": {
       "start": "node app.js"
     },
-    "author": "saeed",
+    "author": "saeed zakeri",
     "license": "ISC",
     "dependencies": {
       "body-parser": "^1.20.2",

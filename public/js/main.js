@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
     });
     navLi.forEach(li => {
         li.classList.remove('active');
-        document.querySelector('nav ul li a[href*=' + current + ']').classList.add('active');
+        document.querySelector('nav ul li a[href*=' + current + ']')?.classList.add('active');
     });
 });
 
@@ -73,6 +73,50 @@ function checkValidation(id) {
         return 1;
     }
 }
+
+document.getElementById("contactSubmitButton")?.addEventListener("click", function (event) {
+    event.preventDefault();
+    // Get form values
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let email = document.getElementById("email").value;
+    let contactNumber = document.getElementById("contactNumber").value;
+    let message = document.getElementById("message").value;
+
+    let list = ['firstName', 'lastName', 'email', 'message'];
+    let result = 0;
+
+    list.forEach(x => {
+        result += checkValidation(x);
+    })
+    if (result == list.length) {
+        fetch("/submit_contactForm", {
+            method: "POST",
+            body: JSON.stringify({
+                firstName,
+                lastName,
+                email,
+                contactNumber,
+                message
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+            .then(response => {
+                showSuccessMessage();
+                list.forEach(x => {
+                    var element = document.getElementById(x);
+                    element.value = '';
+                    element.className = '';
+                    element.placeholder = '';
+                })
+            })
+            .catch(error => {
+                showErrorMessage();
+            });
+    }
+});
 
 function changeLanguage() {
     let element = document.getElementById("languageSelect");
