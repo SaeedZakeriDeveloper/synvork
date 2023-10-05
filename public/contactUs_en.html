@@ -13,7 +13,7 @@
     <div class="container">
         <div class="contactInfo">
             <div>
-                <h2>Informations de contact</h2>
+                <h2>Contact Info</h2>
                 <ul class="info">
                     <li>
                 <span>
@@ -68,30 +68,30 @@
             </ul>
         </div>
         <div class="contactForm">
-            <h2>Contactez-nous aujourd'hui</h2>
+            <h2>Contact us today</h2>
             <div class="formBox">
                 <div class="inputBox w50">
                     <input tyep="text" required onfocusout="checkValidation('firstName')" id="firstName"/>
-                    <span>Prénom</span>
+                    <span>First Name</span>
                 </div>
                 <div class="inputBox w50">
                     <input tyep="text" required onfocusout="checkValidation('lastName')" id="lastName"/>
-                    <span>Nom de famille</span>
+                    <span>Last Name</span>
                 </div>
                 <div class="inputBox w50">
                     <input tyep="email" required onfocusout="checkValidation('email')" id="email"/>
-                    <span>Adresse e-mail</span>
+                    <span>Email Address</span>
                 </div>
                 <div class="inputBox w50">
                     <input tyep="text" required id="contactNumber"/>
-                    <span>Téléphone</span>
+                    <span>Phone</span>
                 </div>
                 <div class="inputBox w100">
                     <textarea required onfocusout="checkValidation('message')" id="message"></textarea>
-                    <span>Ecrivez votre message ici...</span>
+                    <span>Write your message here...</span>
                 </div>
                 <div class="inputBox w100">
-                    <input type="submit" value="Envoyer" id="contactSubmitButton"/>
+                    <input type="submit" value="Send" id="contactSubmitButton"/>
                 </div>
             </div>
         </div>
@@ -102,10 +102,10 @@
     <div class="modal-content" style="background-color: white; margin-top: 100px;">
         <span class="close" onclick="closeSuccessMessage()">&times;</span>
         <h3 style="color: green; margin-bottom: 20px; font-size: 18px; font-weight: bold; text-transform: none;">
-            Votre message a été envoyé avec succès.
+            Your message has been sent successfully.
         </h3>
-        <p style="font-size: 1.5rem">Merci d'avoir pris contact avec nous. Nos collègues vous contacteront
-            rapidement.</p>
+        <p style="font-size: 1.5rem">Thank you for getting in touch with us. Our colleagues will contact you
+            promptly.</p>
     </div>
 </div>
 
@@ -113,9 +113,8 @@
     <div class="modal-content" style="background-color: white; margin-top: 100px;">
         <span class="close" onclick="closeErrorMessage()">&times;</span>
         <h3 style="color: red; margin-bottom: 20px; font-size: 18px ;font-weight: bold; text-transform: none;">
-            Échec de l'envoi du message !</h3>
-        <p style="font-size: 1.5rem;">Désolé, un problème est survenu lors de l'envoi de votre message. Veuillez
-            réessayer plus tard.</p>
+            Message Sending Failed!</h3>
+        <p style="font-size: 1.5rem;">Sorry, there was an issue sending your message. Please try again later.</p>
     </div>
 </div>
 
