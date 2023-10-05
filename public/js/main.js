@@ -23,44 +23,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-function openModal() {
-    var list = ['activity', 'firstName', 'lastName', 'email', 'description', 'phoneNumber', 'address'];
-    var invalidEmailBox = document.getElementById('invalidEmailBox');
-
-    list.forEach(x => {
-        var element = document.getElementById(x);
-        element.value = '';
-        element.className = '';
-        element.placeholder = '';
-        invalidEmailBox.style.visibility = 'hidden';
-    })
-    var modal = document.getElementById("requestFormModal");
-    modal.style.display = "block";
-}
-
-function closeModal() {
-    var modal = document.getElementById("requestFormModal");
-    modal.style.display = "none";
-}
-
-// Function to show the form with a slide-down animation
-function showFormWithSlideDown() {
-    var modal = document.getElementById("requestFormModal");
-    modal.style.display = "block";
-}
-
-// Function to show the form with a slide-down animation
-function showFormWithSlideDown() {
-    var modal = document.getElementById("requestFormModal");
-    modal.style.display = "block";
-}
-
-// Function to close the modal (hide the form)
-function closeModal() {
-    var modal = document.getElementById("requestFormModal");
-    modal.style.display = "none";
-}
-
 function showSuccessMessage() {
     var successModal = document.getElementById("successMessage");
     successModal.style.display = "block";
@@ -147,9 +109,6 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        // if (positionFromTop - window.innerHeight <= 0) {
-        //     element.classList.add('fadeInUp');
-        // }
         if (window.innerHeight - positionFromTop >= 270) {
             element.classList.add('fadeInUp');
         }
@@ -160,9 +119,6 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        // if (positionFromTop - window.innerHeight <= 0) {
-        //     element.classList.add('fadeInUp');
-        // }
         if (window.innerHeight - positionFromTop >= 270) {
             element.classList.add('fadeInLeft');
         }
@@ -173,9 +129,6 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        // if (positionFromTop - window.innerHeight <= 0) {
-        //     element.classList.add('fadeInUp');
-        // }
         if (window.innerHeight - positionFromTop >= 270) {
             element.classList.add('fadeInRight');
         }

@@ -29,8 +29,8 @@
             <div class="languageBtn">
                 <select id="languageSelect" onchange="changeLanguage()" class="form-select"
                         aria-label="Default select example">
-                    <option value="1" selected>France</option>
-                    <option value="2">English</option>
+                    <option value="1">French</option>
+                    <option value="2" selected>English</option>
                 </select>
             </div>
         </div>
@@ -285,7 +285,7 @@
             </div>
         </div>
         <div class="w-100 position-relative">
-            <video id="synvork-video" autoplay loop muted plays-inline class="videoback" allowfullscreen="false"
+            <video id="synvork-video" autoplay loop muted plays-inline class="videoBack" allowfullscreen="false"
                    preload="auto">
                 <source src="./img/Filling-Station.mp4">
             </video>
@@ -360,11 +360,11 @@
                 <div class="new-text animated fadeInUpBox">
                     <h3>Solid Dosage Form Machines</h3>
                     <p>
-                        . Blistering Machines<br>
-                        . Cartoning Machines<br>
-                        . Tablet Press Machines<br>
-                        . Tablet Counter Machines<br>
-                        . Capsule Filling Machines
+                        Blistering Machines<br>
+                        Cartoning Machines<br>
+                        Tablet Press Machines<br>
+                        Tablet Counter Machines<br>
+                        Capsule Filling Machines
                     </p>
                 </div>
             </div>
@@ -374,11 +374,11 @@
                 <div class="new-text animated fadeInUpBox">
                     <h3>Injectable Lines</h3>
                     <p>
-                        .Vial Filling Lines<br>
-                        .Ampoule Filling Lines<br>
-                        .Prefilled Syringe Lines<br>
-                        .Pen Assembler Machines<br>
-                        .Cartridge Filling Machines<br>
+                        Vial Filling Lines<br>
+                        Ampoule Filling Lines<br>
+                        Prefilled Syringe Lines<br>
+                        Pen Assembler Machines<br>
+                        Cartridge Filling Machines<br>
                     </p>
                 </div>
             </div>
@@ -389,11 +389,11 @@
                 <div class="new-text animated fadeInUpBox">
                     <h3>Laboratory Equipment</h3>
                     <p>
-                        .Ovens<br>
-                        .Advanced Freezers <span style="font-size: 18px">(-80°c and -150°c)</span><br>
-                        .Centrifuges<br>
-                        .HPLC <span style="font-size: 18px">(High-Performance Liquid Chromatography)</span><br>
-                        .UPLC <span style="font-size: 18px">(Ultra-Performance Liquid Chromatography)</span>
+                        Ovens<br>
+                        Advanced Freezers <span style="font-size: 18px">(-80°c and -150°c)</span><br>
+                        Centrifuges<br>
+                        HPLC <span style="font-size: 18px">(High-Performance Liquid Chromatography)</span><br>
+                        UPLC <span style="font-size: 18px">(Ultra-Performance Liquid Chromatography)</span>
                     </p>
                 </div>
             </div>
@@ -416,6 +416,7 @@
         </a>
     </div>
 </section>
+
 <footer>
     <div class="container">
         <div class="box">
@@ -451,43 +452,7 @@
         <p>&copy;2023 All Right Reserved <span>Saeed Zakeri</span></p>
     </div>
 </footer>
-<div id="requestFormModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h3 class="titleForm">Request Form</h3>
-        <form id="requestForm">
-            <label for="activity">Select an Activity:</label>
-            <select name="activity" id="activity">
-                <option value="Furniture Assembly">Furniture Assembly</option>
-                <option value="Painting">Painting</option>
-                <option value="Efficient Moving">Efficient Moving</option>
-                <option value="Plumbing">Plumbing</option>
-                <option value="Carpentry">Carpentry</option>
-                <option value="Electric Service House">Electric Service House</option>
-            </select>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required oninput="checkValidation('firstName')">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required oninput="checkValidation('lastName')">
-            <label for="phoneNumber">Phone number:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" required
-                   oninput="checkValidation('phoneNumber')">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required oninput="checkValidation('email')"
-                   style="margin-bottom: 0.25rem;">
-            <span id="invalidEmailBox"
-                  style="visibility: hidden; margin-bottom: 0.7rem; font-size: 1.2rem; margin-bottom: 0.4rem;">
-                    Email is invalid.
-                </span>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required oninput="checkValidation('address')">
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required
-                      oninput="checkValidation('description')"></textarea>
-            <button type="submit" id="submitButton">Submit</button>
-        </form>
-    </div>
-</div>
+
 <div id="successMessage" class="modal">
     <div class="modal-content" style="background-color: white; margin-top: 100px;">
         <span class="close" onclick="closeSuccessMessage()">&times;</span>
@@ -498,6 +463,7 @@
             promptly.</p>
     </div>
 </div>
+
 <div id="errorMessage" class="modal">
     <div class="modal-content" style="background-color: white; margin-top: 100px;">
         <span class="close" onclick="closeErrorMessage()">&times;</span>
@@ -506,6 +472,7 @@
         <p style="font-size: 1.5rem;">Sorry, there was an issue sending your message. Please try again later.</p>
     </div>
 </div>
+
 <div class="multi-spinner-container" id="loader">
     <div class="multi-spinner">
         <div class="multi-spinner">
@@ -519,11 +486,6 @@
         </div>
     </div>
 </div>
-
-<!--<div class="logo-container">-->
-<!--    <img src="./img/LOGO.png" alt="Your Logo Animation">-->
-<!--</div>-->
-
 
 <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
