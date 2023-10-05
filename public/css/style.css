@@ -922,7 +922,7 @@ input::placeholder {
 }
 
 .animated {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
 
