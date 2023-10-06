@@ -153,7 +153,7 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        if (window.innerHeight - positionFromTop >= 190) {
+        if (window.innerHeight - positionFromTop >= 200) {
             element.classList.add('fadeInUp');
         }
     }
@@ -163,7 +163,7 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        if (window.innerHeight - positionFromTop >= 190) {
+        if (window.innerHeight - positionFromTop >= 200) {
             element.classList.add('fadeInLeft');
         }
     }
@@ -173,7 +173,7 @@ window.addEventListener('scroll', function () {
         var element = animatedElements[i];
         var positionFromTop = element.getBoundingClientRect().top;
 
-        if (window.innerHeight - positionFromTop >= 190) {
+        if (window.innerHeight - positionFromTop >= 200) {
             element.classList.add('fadeInRight');
         }
     }

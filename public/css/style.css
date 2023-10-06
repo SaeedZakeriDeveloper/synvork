@@ -27,6 +27,7 @@ html {
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -253,7 +254,7 @@ header .container nav ul li a:hover {
     padding: 10rem 0;
 }
 
-.about .container h2 {
+.about .container > h2 {
     text-align: center;
     color: white;
 }
@@ -266,13 +267,16 @@ header .container nav ul li a:hover {
 }
 
 .about .container .about-container .box {
-    padding: 2rem 1.1rem;
     text-align: center;
     cursor: pointer;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
 .about .container .about-container .box:hover {
-    box-shadow: 0 0.1rem 0.5rem 0.2rem rgb(0 0 0 / 20%);
+    box-shadow: 0 0.1rem 0.5rem 0.2rem rgb(255, 255, 255);
     transform: translateY(2rem);
 }
 
@@ -282,14 +286,17 @@ header .container nav ul li a:hover {
     margin-bottom: 4rem;
 }
 
-.about .container .about-container .box h3 {
-    font-size: 2.8rem;
-    color: var(--headingColor);
-    text-transform: capitalize;
-    position: relative;
+.about .container .about-container .box h2 {
+    color: white;
+    font-weight: 600;
+    padding: 0;
+    line-height: 1;
+    font-size: 29px !important;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
 }
 
-.about .container .about-container .box h3::before {
+.about .container .about-container .box h2::before {
     content: "";
     position: absolute;
     bottom: -.5rem;
@@ -301,16 +308,11 @@ header .container nav ul li a:hover {
 
 .about .container .about-container .box p {
     margin-top: 2rem;
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotateY(0deg);
-    }
-
-    100% {
-        transform: rotateY(360deg);
-    }
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px !important;
+    text-align: center;
 }
 
 /* End About Section  */
@@ -1183,7 +1185,6 @@ header + section > div > p {
 
 .service-box > h2 {
     color: #54595F;
-    font-family: "Lato", Sans-serif;
     font-weight: 600;
     padding: 0;
     line-height: 1;
@@ -1194,7 +1195,6 @@ header + section > div > p {
 
 .service-box > p {
     color: #7A7A7A;
-    font-family: Roboto, Sans-serif;
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px !important;
@@ -1215,7 +1215,6 @@ section#contact > div:nth-child(2) {
 
 section#contact > div:nth-child(2) > h2 {
     color: #9AA8BA;
-    font-family: "Prompt", Sans-serif;
     font-size: 40px;
     font-weight: 100;
     line-height: 44px;
@@ -1224,7 +1223,6 @@ section#contact > div:nth-child(2) > h2 {
 
 section#contact > div:nth-child(2) > p {
     color: #5F5B5B;
-    font-family: "Prompt", Sans-serif;
     font-size: 29px;
     font-weight: 300;
     line-height: 32px;
