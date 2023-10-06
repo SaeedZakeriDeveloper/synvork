@@ -164,6 +164,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 110px;
 }
 
 @media (max-width: 992px) {
@@ -180,6 +181,7 @@ header .container .menu-bar {
     font-size: 1.6rem;
     color: green;
     cursor: pointer;
+    margin-bottom: -15px;
 }
 
 header .container nav {
@@ -217,10 +219,11 @@ header .container nav ul li a:hover {
 
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
-    background-color: black;
+    background-color: white;
+    color: black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     header {
         padding: 0;
     }
@@ -345,10 +348,13 @@ header .container nav ul li a:hover {
 .news .news-container .new .new-text h3 {
     text-transform: capitalize;
     color: white;
-    font-size: 2.4rem;
-    font-weight: 300;
     max-width: 35.2rem;
     min-width: 100%;
+    font-weight: 600;
+    padding: 0;
+    line-height: 1;
+    font-size: 29px !important;
+    margin: 0px 0px 20px 0px;
 }
 
 .news .news-container .new .new-text p {
@@ -356,8 +362,9 @@ header .container nav ul li a:hover {
     color: white !important;
     max-width: 35.7rem;
     min-width: 100%;
-    font-size: 21px;
     font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px !important;
 }
 
 .news .news-container .new .new-text a {
@@ -394,6 +401,7 @@ footer .container .box:first-child {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: center;
 }
 
 footer .container .box h4 {
@@ -891,15 +899,20 @@ input::placeholder {
 
 .Information .textBox > h3 {
     color: white !important;
-    font-size: 3rem;
     font-weight: 600;
     text-transform: capitalize;
+    padding: 0;
+    line-height: 1;
+    font-size: 29px !important;
+    text-align: left;
+    margin: 0px 0px 20px 0px;
 }
 
 .Information .textBox > p {
-    font-size: 21px;
     font-weight: 400;
     color: white;
+    line-height: 1.5;
+    font-size: 17px !important;
 }
 
 .fadeInLeftBox {
@@ -929,7 +942,7 @@ input::placeholder {
 }
 
 .animated_2 {
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
@@ -1141,20 +1154,26 @@ header + section:hover > div {
 
 header + section > div > h1 {
     color: white;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    word-spacing: 7px;
     width: 50vw;
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 35px;
+    line-height: 1;
+    text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.3);
 }
 
 header + section > div > p {
-    font-size: 25px;
-    font-weight: 500;
-    word-spacing: 2px;
     width: 70vw;
     overflow: hidden;
     color: white;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    line-height: 1.4;
+    text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.3);
+    --widgets-spacing: 20px 20px;
 }
 
 .services {
@@ -1249,11 +1268,12 @@ section#contact > div:nth-child(2) > a:hover {
 
 .languageBtn {
     margin-left: 37px;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
 }
 
 .languageBtn > select {
     margin: 0;
+    font-weight: 700;
 }
 
 @media (max-width: 690px) {
