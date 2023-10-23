@@ -813,6 +813,10 @@ input::placeholder {
     margin-bottom: 140px;
 }
 
+#information {
+    margin-top: -150px;
+}
+
 .Information {
     background-position: center;
     background-size: cover;
@@ -1008,7 +1012,7 @@ header + section {
 }
 
 section#video {
-    padding: 6rem 3rem !important;
+    padding: 0 3rem !important;
 }
 
 section#video > div:nth-child(1) {
@@ -1179,9 +1183,20 @@ header + section > div > p {
     padding-top: 0 !important;
 }
 
+.services > h3 {
+    color: white !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0;
+    line-height: 1;
+    font-size: 45px !important;
+    margin: 0;
+    text-align: center;
+}
+
 #carouselExampleIndicators {
     background-color: black;
-    height: 450px;
+    height: 370px;
     display: flex;
     align-items: center;
     margin-bottom: 140px;
