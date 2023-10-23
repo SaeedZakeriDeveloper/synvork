@@ -299,15 +299,15 @@ header .container nav ul li a:hover {
     margin: 0px 0px 20px 0px;
 }
 
-.about .container .about-container .box h2::before {
-    content: "";
-    position: absolute;
-    bottom: -.5rem;
-    right: 27%;
-    height: .2rem;
-    width: 45%;
-    background-color: var(--yellowColor);
-}
+/*.about .container .about-container .box h2::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -.5rem;*/
+/*    right: 27%;*/
+/*    height: .2rem;*/
+/*    width: 45%;*/
+/*    background-color: var(--yellowColor);*/
+/*}*/
 
 .about .container .about-container .box p {
     margin-top: 2rem;
@@ -821,11 +821,8 @@ input::placeholder {
 .Information img {
     max-width: 100%;
     max-height: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     box-shadow: 0px 0px 10px 0px gray;
-}
-
-.Information img {
     box-sizing: border-box;
     object-fit: cover;
     background-blend-mode: luminosity;
@@ -899,11 +896,11 @@ input::placeholder {
 
 .Information .textBox > h3 {
     color: white !important;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: capitalize;
     padding: 0;
     line-height: 1;
-    font-size: 29px !important;
+    font-size: 35px !important;
     text-align: left;
     margin: 0px 0px 20px 0px;
 }
@@ -913,6 +910,7 @@ input::placeholder {
     color: white;
     line-height: 1.5;
     font-size: 17px !important;
+    text-align: left;
 }
 
 .fadeInLeftBox {
@@ -1060,7 +1058,7 @@ section#video > div:nth-child(1) {
 @media screen and (max-width: 534px) {
 
     header + section > div > h1 {
-        font-size: 30px !important;
+        font-size: 45px !important;
     }
 
     header + section > div > p {
@@ -1144,17 +1142,17 @@ header + section {
 }
 
 header + section > div {
-    opacity: 0;
-    transition: opacity 1s linear;
+    /*opacity: 0;*/
+    /*transition: opacity 1s linear;*/
 }
 
 header + section:hover > div {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 header + section > div > h1 {
     color: white;
-    width: 50vw;
+    width: 90vw;
     margin-bottom: 30px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -1164,12 +1162,13 @@ header + section > div > h1 {
 }
 
 header + section > div > p {
+    margin-top: 70px;
     width: 70vw;
     overflow: hidden;
     color: white;
     margin-bottom: 30px;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1.3px;
     line-height: 1.4;
     text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.3);
