@@ -126,6 +126,10 @@ section {
     .container {
         width: 750px;
     }
+
+    .about .container .about-container .box {
+        border: 1px solid white;
+    }
 }
 
 /*Large Screen*/
@@ -272,14 +276,13 @@ header .container nav ul li a:hover {
 .about .container .about-container .box {
     text-align: center;
     cursor: pointer;
-    border: 1px solid white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 4px;
     margin-top: 15px;
 }
 
 .about .container .about-container .box:hover {
-    box-shadow: 0 0.1rem 0.5rem 0.2rem rgb(255, 255, 255);
+    box-shadow: 0 0.1rem 0.5rem 0.2rem rgb(135 135 135 / 20%);
     transform: translateY(2rem);
 }
 
