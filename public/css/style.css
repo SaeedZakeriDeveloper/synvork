@@ -1349,3 +1349,71 @@ section#contact > div:nth-child(2) > a:hover {
         padding: 30px 215px 0 115px;
     }
 }
+
+
+
+.price-box {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.price-box {
+    position: relative;
+    background-color: #202020;
+    padding: 2.7rem 0;
+    border: 2px solid #c1542d;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.price-box:hover {
+    transform: scale(1.05);
+    /* Scale the pricing box on hover */
+}
+
+
+.price-box h3 {
+    position: relative;
+    font-size: 2.6rem;
+    color: var(--textColor);
+    text-transform: capitalize;
+    padding-bottom: 2.7rem;
+}
+
+
+.price-box p {
+    position: relative;
+    font-size: 1.7rem;
+    color: #ffffff;
+    max-width: 22.6rem;
+    margin: 2.4rem auto;
+}
+
+.price-box>h3 {
+    height: 77px;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 370px) {
+
+.price-box:hover {
+        transform: scale(1);
+        /* Set scaling to 1 on hover for smaller screens (no scaling) */
+        transition: none;
+        /* Remove transition effect for smoother scaling on smaller screens */
+    }
+}
+
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
+    gap: 7rem;
+}
