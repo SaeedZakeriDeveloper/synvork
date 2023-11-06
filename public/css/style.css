@@ -1358,7 +1358,7 @@ section#contact > div:nth-child(2) > a:hover {
 .cont {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: calc(100vh - 140px);
     padding: 80px 70px;
 }
 
@@ -1505,6 +1505,7 @@ section#contact > div:nth-child(2) > a:hover {
     text-transform: uppercase;
     font-size: 40px;
     color: #fff;
+    word-break: break-word;
 }
 
 .el__text > p {
@@ -1513,6 +1514,7 @@ section#contact > div:nth-child(2) > a:hover {
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px !important;
+    word-break: break-word;
 }
 
 .el__close-btn {
@@ -1797,4 +1799,54 @@ section#contact > div:nth-child(2) > a:hover {
 .icon-link--twitter {
     left: auto;
     right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .cont__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .el {
+        margin-bottom: 10px;
+        width: 100%;
+        position: unset;
+    }
+
+    .el:nth-child(1),
+    .el:nth-child(2),
+    .el:nth-child(3),
+    .el:nth-child(4),
+    .el:nth-child(5) {
+        transform: none;
+    }
+
+    .el.s--active {
+        position: absolute;
+    }
+
+    .cont {
+        padding: 80px 40px;
+    }
+
+    section#services {
+        padding: 6rem 0;
+    }
+
+    .el__bg {
+        width: 100%;
+    }
+
+    .el:nth-child(2) .el__bg,
+    .el:nth-child(3) .el__bg,
+    .el:nth-child(4) .el__bg,
+    .el:nth-child(5) .el__bg {
+        transform: none;
+    }
+
+    .el__text {
+        padding-top: 40px;
+    }
+
 }
