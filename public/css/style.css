@@ -1479,6 +1479,8 @@ section#contact > div:nth-child(2) > a:hover {
     text-transform: uppercase;
     font-size: 18px;
     text-align: center;
+    word-break: break-word;
+    padding: 9px;
 }
 
 .el__content {
@@ -1801,7 +1803,7 @@ section#contact > div:nth-child(2) > a:hover {
     right: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 
     .cont__inner {
         display: flex;
@@ -1812,6 +1814,11 @@ section#contact > div:nth-child(2) > a:hover {
         margin-bottom: 10px;
         width: 100%;
         position: unset;
+        transition: margin 1s ease-in-out;
+    }
+
+    .el:hover {
+        margin-bottom: 100px;
     }
 
     .el:nth-child(1),
