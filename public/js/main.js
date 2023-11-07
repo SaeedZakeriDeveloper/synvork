@@ -221,42 +221,99 @@ var $cont = document.querySelector('.cont');
 var $elsArr = [].slice.call(document.querySelectorAll('.el'));
 var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
 
-setTimeout(function() {
-  $cont.classList.remove('s--inactive');
+setTimeout(function () {
+    $cont.classList.remove('s--inactive');
 }, 200);
 
-$elsArr.forEach(function($el) {
-  $el.addEventListener('click', function() {
-    if (this.classList.contains('s--active')) return;
-    $cont.classList.add('s--el-active');
-    this.classList.add('s--active');
-  });
-});
-
-$closeBtnsArr.forEach(function($btn) {
-  $btn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    $cont.classList.remove('s--el-active');
-    document.querySelector('.el.s--active').classList.remove('s--active');
-  });
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.getElementById('header1');
-  
-    header1.addEventListener('click', function() {
-      // Create a new paragraph element
-      const p = document.createElement('p');
-      p.textContent = " Our expertise encompasses refurbishing pharmaceutical machines like solid dosage form equipment injectable lines, and biopharmaceutical equipment. We excel in refurbishing machines such as blistering, tablet press, vial filling, and purification systems. Our proficiency extends from solid dosage forms to up-stream and down-stream biopharmaceutical equipment " 
-      
-      // Apply styles to the paragraph
-    //   p.style.color = 'red';
-    //   p.style.fontWeight = 'bold';
-  
-      // Replace the h1 with the new paragraph
-      header1.replaceWith(p);
+$elsArr.forEach(function ($el) {
+    $el.addEventListener('click', function () {
+        if (this.classList.contains('s--active')) return;
+        $cont.classList.add('s--el-active');
+        this.classList.add('s--active');
     });
-  });
+});
+
+$closeBtnsArr.forEach(function ($btn) {
+    $btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        $cont.classList.remove('s--el-active');
+        document.querySelector('.el.s--active').classList.remove('s--active');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const Information_1 = document.getElementById('Information_1');
+    const p = document.getElementById('Information_1-p');
+    // p.style.transition='all 3s ease-in-out'
+    // p.style.opacity='0'
+    // p.textContent = "Our expertise encompasses refurbishing pharmaceutical machines" +
+    //     " like solid dosage form equipment injectable lines, and biopharmaceutical" +
+    //     " equipment. We excel in refurbishing machines such as blistering, tablet press," +
+    //     " vial filling, and purification systems. Our proficiency extends from solid dosage" +
+    //     " forms to up-stream and down-stream biopharmaceutical equipment."
+    Information_1.addEventListener('click', function () {
+        // Create a new paragraph element
+
+
+        // Apply styles to the paragraph
+        //   p.style.color = 'red';
+        p.style.opacity='1';
+
+        Information_1.style.opacity='0'
+        //   p.style.fontWeight = 'bold';
+
+        // Replace the h1 with the new paragraph
+        // Information_1.replaceWith(p);
+    });
+
+    const Information_2 = document.getElementById('Information_2');
+    Information_2.addEventListener('click', function () {
+        // Create a new paragraph element
+        const p = document.createElement('p');
+        p.textContent = "Beyond pharmaceutical machinery, we extend our refurbishing capabilities to laboratory equipment.\n" +
+            "                From ovens to advanced freezers, centrifuges, and chromatography systems, including HPLC, UPLC, GC,\n" +
+            "                and Preparative HPLC, we breathe new life into vital lab instruments."
+
+        // Apply styles to the paragraph
+        //   p.style.color = 'red';
+        //   p.style.fontWeight = 'bold';
+
+        // Replace the h1 with the new paragraph
+        Information_2.replaceWith(p);
+    });
+
+    const Information_3 = document.getElementById('Information_3');
+    Information_3.addEventListener('click', function () {
+        // Create a new paragraph element
+        const p = document.createElement('p');
+        p.textContent = "At SYNVORK, quality is our cornerstone. We follow stringent refurbishing processes and quality\n" +
+            "                control measures to ensure that every machine and equipment we refurbish meets or exceeds industry\n" +
+            "                standards. Our team of experts, armed with extensive industry knowledge, is dedicated to\n" +
+            "                delivering reliable, high-performance machinery to our clients.";
+
+        // Apply styles to the paragraph
+        //   p.style.color = 'red';
+        //   p.style.fontWeight = 'bold';
+
+        // Replace the h1 with the new paragraph
+        Information_3.replaceWith(p);
+    });
+
+    const Information_4 = document.getElementById('Information_4');
+    Information_4.addEventListener('click', function () {
+        // Create a new paragraph element
+        const p = document.createElement('p');
+        p.textContent = "We prioritize sustainability and cost-effectiveness in the pharmaceutical industry by refurbishing\n" +
+            "                existing machinery, reducing waste, and lowering carbon footprint. Our refurbished equipment offers\n" +
+            "                a financially responsible alternative to buying new machines, allowing businesses to use their\n" +
+            "                resources more efficiently.";
+
+        // Apply styles to the paragraph
+        //   p.style.color = 'red';
+        //   p.style.fontWeight = 'bold';
+
+        // Replace the h1 with the new paragraph
+        Information_4.replaceWith(p);
+    });
+
+});
