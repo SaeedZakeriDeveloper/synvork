@@ -2092,21 +2092,3 @@ section#contact > div:nth-child(2) > a:hover {
         filter: blur(0);
     }
 }
-
-
-
-#Information_1 {
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out; / Add transition for opacity /
-opacity: 1; / Initially visible /
-}
-
-#Information_1.hidden {
-    opacity: 0; / Hidden with opacity 0 /
-pointer-events: none; / Disables interactions with hidden element /
-}
-
-#myParagraph {
-    opacity: 0; / Initially hidden /
-transition: opacity 0.3s ease-in-out; / Add transition for opacity /
-}

@@ -242,22 +242,22 @@ $closeBtnsArr.forEach(function ($btn) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // const Information_1 = document.getElementById('Information_1');
-    // Information_1.addEventListener('click', function () {
-    //     // Create a new paragraph element
-    //     const p = document.createElement('p');
-    //
-    //     // Apply styles to the paragraph
-    //     //   p.style.color = 'red';
-    //
-    //     p.textContent = "Our expertise encompasses refurbishing pharmaceutical machines" +
-    //         " like solid dosage form equipment injectable lines, and biopharmaceutical" +
-    //         " equipment. We excel in refurbishing machines such as blistering, tablet press," +
-    //         " vial filling, and purification systems. Our proficiency extends from solid dosage" +
-    //         " forms to up-stream and down-stream biopharmaceutical equipment."
-    //     // Replace the h1 with the new paragraph
-    //     Information_1.replaceWith(p);
-    // });
+    const Information_1 = document.getElementById('Information_1');
+    Information_1.addEventListener('click', function () {
+        // Create a new paragraph element
+        const p = document.createElement('p');
+
+        // Apply styles to the paragraph
+        //   p.style.color = 'red';
+
+        p.textContent = "Our expertise encompasses refurbishing pharmaceutical machines" +
+            " like solid dosage form equipment injectable lines, and biopharmaceutical" +
+            " equipment. We excel in refurbishing machines such as blistering, tablet press," +
+            " vial filling, and purification systems. Our proficiency extends from solid dosage" +
+            " forms to up-stream and down-stream biopharmaceutical equipment."
+        // Replace the h1 with the new paragraph
+        Information_1.replaceWith(p);
+    });
 
     const Information_2 = document.getElementById('Information_2');
     Information_2.addEventListener('click', function () {
@@ -352,23 +352,4 @@ document.addEventListener('DOMContentLoaded', function () {
         about_h2_4.replaceWith(p);
     });
 
-
-    const heading = document.getElementById("Information_1");
-
-    heading.addEventListener("click", function () {
-        const paragraph = document.createElement("p");
-        paragraph.id = "myParagraph";
-        paragraph.innerText = "New Content"; // Change this to your desired new content
-
-        // Hide the heading with a fade-out effect
-        heading.classList.add("hidden");
-
-        // Insert the paragraph in the exact location of the heading
-        heading.parentNode.insertBefore(paragraph, heading);
-
-        // Show the paragraph with a fade-in effect
-        setTimeout(function () {
-            paragraph.style.opacity = "1";
-        }, 10); // Delay for smoother transition
-    });
 });
