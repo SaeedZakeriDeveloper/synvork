@@ -290,7 +290,7 @@ header .container nav ul li a:hover {
     }
 
     100% {
-        transform: rotateY(360deg);
+        transform: rotateY(180deg);
     }
 }
 
