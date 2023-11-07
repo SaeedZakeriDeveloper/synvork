@@ -1150,7 +1150,7 @@ header + section > div > p {
 }
 
 #carouselExampleIndicators {
-    background-color: black;
+    background-color: #1f1f1f;
     height: 370px;
     display: flex;
     align-items: center;
@@ -1189,7 +1189,7 @@ header + section > div > p {
 }
 
 section#contact > div:nth-child(1) {
-    background-image: url("../img/call-operator-working.jpg");
+    background-image: url("../img/contactus.jpg");
     background-position: center;
     background-size: cover;
     height: 490px;
