@@ -849,9 +849,6 @@ input::placeholder {
     text-align: left;
     margin: 0px 0px 20px 0px;
     cursor: pointer;
-
-    transition: all 3s ease-in-out;
-    opacity: 1;
 }
 
 .Information .textBox > p {
@@ -860,10 +857,6 @@ input::placeholder {
     line-height: 1.5;
     font-size: 17px !important;
     text-align: left;
-
-    transition: all 3s ease-in-out;
-    /*display: none;*/
-opacity: 0;
 }
 
 .fadeInLeftBox {
