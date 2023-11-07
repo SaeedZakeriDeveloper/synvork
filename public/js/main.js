@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished machinery provides reliable production processes through rigorous testing and\n" +
             "                    inspections, increasing client confidence in equipment surpassing industry standards.";
-        about_box_1.style.animation = 'rotation 0.7s ease-in-out';
+        about_box_1.style.animation = 'rotation 0.8s ease-in-out';
         about_h2_1.replaceWith(p);
     });
 
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished pharmaceutical machinery offers a cost-effective option with excellent performance,\n" +
             "                    saving on the high capital investment required for new equipment.";
-        about_box_2.style.animation = 'rotation 0.7s ease-in-out';
+        about_box_2.style.animation = 'rotation 0.8s ease-in-out';
         about_h2_2.replaceWith(p);
     });
 
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
         p.textContent = "SYNVORK specializes in customizing refurbished machines to fit unique production needs,\n" +
             "                    seamlessly\n" +
             "                    integrating them into existing production lines.";
-        about_box_3.style.animation = 'rotation 0.7s ease-in-out';
+        about_box_3.style.animation = 'rotation 0.8s ease-in-out';
         about_h2_3.replaceWith(p);
     });
 
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished machines in pharmaceutical production save time and money by allowing businesses to\n" +
             "                    quickly meet market demands, making them more efficient than new machines.";
-        about_box_4.style.animation = 'rotation 0.7s ease-in-out';
+        about_box_4.style.animation = 'rotation 0.8s ease-in-out';
         about_h2_4.replaceWith(p);
     });
 
