@@ -279,6 +279,19 @@ header .container nav ul li a:hover {
     padding: 15px;
     border-radius: 4px;
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 350px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 .about .container .about-container .box:hover {

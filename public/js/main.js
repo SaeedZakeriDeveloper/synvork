@@ -309,4 +309,47 @@ document.addEventListener('DOMContentLoaded', function () {
         Information_4.replaceWith(p);
     });
 
+
+    // About section
+    const about_box_1 = document.getElementById('about_box_1');
+    const about_h2_1 = document.getElementById('about_h2_1');
+    about_h2_1.addEventListener('click', function () {
+        const p = document.createElement('p');
+        p.textContent = "Refurbished machinery provides reliable production processes through rigorous testing and\n" +
+            "                    inspections, increasing client confidence in equipment surpassing industry standards.";
+        about_box_1.style.animation = 'rotation .5s linear';
+        about_h2_1.replaceWith(p);
+    });
+
+    const about_box_2 = document.getElementById('about_box_2');
+    const about_h2_2 = document.getElementById('about_h2_2');
+    about_h2_2.addEventListener('click', function () {
+        const p = document.createElement('p');
+        p.textContent = "Refurbished pharmaceutical machinery offers a cost-effective option with excellent performance,\n" +
+            "                    saving on the high capital investment required for new equipment.";
+        about_box_2.style.animation = 'rotation .5s linear';
+        about_h2_2.replaceWith(p);
+    });
+
+    const about_box_3 = document.getElementById('about_box_3');
+    const about_h2_3 = document.getElementById('about_h2_3');
+    about_h2_3.addEventListener('click', function () {
+        const p = document.createElement('p');
+        p.textContent = "SYNVORK specializes in customizing refurbished machines to fit unique production needs,\n" +
+            "                    seamlessly\n" +
+            "                    integrating them into existing production lines.";
+        about_box_3.style.animation = 'rotation .5s linear';
+        about_h2_3.replaceWith(p);
+    });
+
+    const about_box_4 = document.getElementById('about_box_4');
+    const about_h2_4 = document.getElementById('about_h2_4');
+    about_h2_4.addEventListener('click', function () {
+        const p = document.createElement('p');
+        p.textContent = "Refurbished machines in pharmaceutical production save time and money by allowing businesses to\n" +
+            "                    quickly meet market demands, making them more efficient than new machines.";
+        about_box_4.style.animation = 'rotation .5s linear';
+        about_h2_4.replaceWith(p);
+    });
+
 });
