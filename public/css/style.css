@@ -983,7 +983,7 @@ section#video > div:nth-child(1) {
     }
 
     header + section > div > p {
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
 
     .title-container > p {
@@ -1175,7 +1175,7 @@ header + section > div > p {
 }
 
 section#contact > div:nth-child(1) {
-    background-image: url("../img/contact-icons-keyboard-button.jpg");
+    background-image: url("../img/call-operator-working.jpg");
     background-position: center;
     background-size: cover;
     height: 490px;
@@ -1857,3 +1857,7 @@ section#contact > div:nth-child(2) > a:hover {
     }
 
 }
+
+
+
+

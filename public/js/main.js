@@ -241,3 +241,22 @@ $closeBtnsArr.forEach(function($btn) {
   });
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header1');
+  
+    header1.addEventListener('click', function() {
+      // Create a new paragraph element
+      const p = document.createElement('p');
+      p.textContent = " Our expertise encompasses refurbishing pharmaceutical machines like solid dosage form equipment injectable lines, and biopharmaceutical equipment. We excel in refurbishing machines such as blistering, tablet press, vial filling, and purification systems. Our proficiency extends from solid dosage forms to up-stream and down-stream biopharmaceutical equipment " 
+      
+      // Apply styles to the paragraph
+    //   p.style.color = 'red';
+    //   p.style.fontWeight = 'bold';
+  
+      // Replace the h1 with the new paragraph
+      header1.replaceWith(p);
+    });
+  });
