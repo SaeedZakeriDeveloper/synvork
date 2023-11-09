@@ -1831,10 +1831,6 @@ section#contact > div:nth-child(2) > a:hover {
         transition: margin 1s ease-in-out;
     }
 
-    .el:hover {
-        margin-bottom: 100px;
-    }
-
     .el:nth-child(1),
     .el:nth-child(2),
     .el:nth-child(3),
@@ -1868,6 +1864,10 @@ section#contact > div:nth-child(2) > a:hover {
 
     .el__text {
         padding-top: 40px;
+    }
+
+    .el__index {
+        display: none;
     }
 
 }
@@ -2097,14 +2097,14 @@ section#contact > div:nth-child(2) > a:hover {
 .fade-in {
     opacity: 0;
     animation: fadeIn 4.5s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
   
