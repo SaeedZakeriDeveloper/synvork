@@ -1093,7 +1093,7 @@ header + section {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/medical-laboratory.jpg");
+    background-image: url("../img/modern-chemical-production-equipment-found-inside-manufacture-background.jpg");
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -2096,7 +2096,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .fade-in {
     opacity: 0;
-    animation: fadeIn 3.5s ease-in-out forwards;
+    animation: fadeIn 4.5s ease-in-out forwards;
   }
   
   @keyframes fadeIn {
