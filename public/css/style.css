@@ -31,7 +31,7 @@ html {
 
 body {
     background: #1f1f1f;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 ::-webkit-scrollbar {
@@ -129,10 +129,6 @@ section {
 @media (min-width: 768px) {
     .container {
         width: 750px;
-    }
-
-    .about .container .about-container .box {
-        border: 1px solid white;
     }
 }
 
@@ -252,13 +248,17 @@ header .container nav ul li a:hover {
     header .container nav ul li {
         padding-bottom: 0;
     }
+
+    section#contact > div:nth-child(1) {
+        height: 490px;
+    }
 }
 
 /* End Header Section  */
 
 /* Start About Section  */
 .about {
-    padding: 25rem 0 20rem 0;
+    padding: 14rem 0 7rem 0;
 }
 
 .about .container > h2 {
@@ -270,7 +270,7 @@ header .container nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(24.8rem, 100%), 1fr));
     gap: 2rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 .about .container .about-container .box {
@@ -278,6 +278,7 @@ header .container nav ul li a:hover {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    border: 1px solid white;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -310,20 +311,10 @@ header .container nav ul li a:hover {
     font-weight: 600;
     padding: 0;
     line-height: 1;
-    font-size: 29px !important;
+    font-size: 27px !important;
     text-align: center;
-    margin: 0px 0px 20px 0px;
+    margin: 0 0 20px 0;
 }
-
-/*.about .container .about-container .box h2::before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: -.5rem;*/
-/*    right: 27%;*/
-/*    height: .2rem;*/
-/*    width: 45%;*/
-/*    background-color: var(--yellowColor);*/
-/*}*/
 
 .about .container .about-container .box p {
     margin-top: 2rem;
@@ -695,7 +686,7 @@ button[type="submit"]:hover {
     width: 75%;
 }
 
-col-2 {
+.col-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
 }
@@ -760,7 +751,7 @@ input::placeholder {
 .Information > .container:nth-child(1),
 .Information > .container:nth-child(2),
 .Information > .container:nth-child(3) {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .Information > .container:nth-child(4) {
@@ -780,7 +771,7 @@ input::placeholder {
     max-width: 100%;
     max-height: 100%;
     margin-top: 20px;
-    box-shadow: 0px 0px 10px 0px gray;
+    box-shadow: 0 0 10px 0 gray;
     box-sizing: border-box;
     object-fit: cover;
     background-blend-mode: luminosity;
@@ -860,7 +851,7 @@ input::placeholder {
     line-height: 1;
     font-size: 35px !important;
     text-align: left;
-    margin: 0px 0px 20px 0px;
+    margin: 0 0 20px 0;
     cursor: pointer;
 }
 
@@ -1111,13 +1102,13 @@ header + section:hover > div {
 
 header + section > div > h1 {
     color: white;
-    width: 90vw;
+    width: 86vw;
     margin-bottom: 30px;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 35px;
     line-height: 1;
-    text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
 }
 
 header + section > div > p {
@@ -1130,12 +1121,20 @@ header + section > div > p {
     font-weight: 600;
     letter-spacing: 1.3px;
     line-height: 1.4;
-    text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
     --widgets-spacing: 20px 20px;
 }
 
 .services {
-    padding-top: 0 !important;
+    padding: 0 25px;
+}
+
+section#services > h1 {
+    font-size: 70px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 !important;
 }
 
 .services > h3 {
@@ -1162,8 +1161,8 @@ header + section > div > p {
     background-color: white;
     height: 274px;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px white;
-    margin: 0px 20px 0px 0px;
+    box-shadow: 0 0 10px 0 white;
+    margin: 0 20px 0 0;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -1178,7 +1177,7 @@ header + section > div > p {
     line-height: 1;
     font-size: 29px !important;
     text-align: center;
-    margin: 0px 0px 20px 0px;
+    margin: 0 0 20px 0;
 }
 
 .service-box > p {
@@ -1192,7 +1191,25 @@ section#contact > div:nth-child(1) {
     background-image: url("../img/contactus.jpg");
     background-position: center;
     background-size: cover;
-    height: 490px;
+    height: 226px;
+}
+
+@media (min-width: 470px) and (max-width: 670px) {
+    section#contact > div:nth-child(1) {
+        height: 289px;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 870px) {
+    section#contact > div:nth-child(1) {
+        height: 433px;
+    }
+}
+
+@media (min-width: 992px) {
+    section#contact > div:nth-child(1) {
+        height: 490px;
+    }
 }
 
 section#contact > div:nth-child(2) {
@@ -1848,7 +1865,7 @@ section#contact > div:nth-child(2) > a:hover {
     }
 
     section#services {
-        padding: 6rem 0;
+        padding: 6rem 0 3rem 0;
     }
 
     .el__bg {
@@ -1891,199 +1908,199 @@ section#contact > div:nth-child(2) > a:hover {
 }
 
 #aboutUs p > span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#aboutUs p > span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#aboutUs p > span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#aboutUs p > span:nth-child(4) {
-    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#aboutUs p > span:nth-child(5) {
     animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(6) {
+#aboutUs p > span:nth-child(2) {
     animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(7) {
+#aboutUs p > span:nth-child(3) {
     animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(8) {
+#aboutUs p > span:nth-child(4) {
     animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(9) {
+#aboutUs p > span:nth-child(5) {
     animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(10) {
+#aboutUs p > span:nth-child(6) {
     animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(11) {
-    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#aboutUs p > span:nth-child(12) {
+#aboutUs p > span:nth-child(7) {
     animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(13) {
+#aboutUs p > span:nth-child(8) {
     animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(14) {
+#aboutUs p > span:nth-child(9) {
     animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(15) {
+#aboutUs p > span:nth-child(10) {
     animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(16) {
+#aboutUs p > span:nth-child(11) {
     animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(17) {
+#aboutUs p > span:nth-child(12) {
     animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(18) {
+#aboutUs p > span:nth-child(13) {
     animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(19) {
+#aboutUs p > span:nth-child(14) {
     animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(20) {
+#aboutUs p > span:nth-child(15) {
     animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(21) {
+#aboutUs p > span:nth-child(16) {
     animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(22) {
+#aboutUs p > span:nth-child(17) {
     animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(23) {
+#aboutUs p > span:nth-child(18) {
     animation: fade-in 0.8s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(24) {
+#aboutUs p > span:nth-child(19) {
     animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(25) {
+#aboutUs p > span:nth-child(20) {
     animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(26) {
+#aboutUs p > span:nth-child(21) {
     animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(27) {
+#aboutUs p > span:nth-child(22) {
     animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(28) {
+#aboutUs p > span:nth-child(23) {
     animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(29) {
+#aboutUs p > span:nth-child(24) {
     animation: fade-in 0.8s 2.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(30) {
+#aboutUs p > span:nth-child(25) {
     animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(31) {
+#aboutUs p > span:nth-child(26) {
     animation: fade-in 0.8s 3.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(32) {
+#aboutUs p > span:nth-child(27) {
     animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(33) {
+#aboutUs p > span:nth-child(28) {
     animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(34) {
+#aboutUs p > span:nth-child(29) {
     animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(35) {
+#aboutUs p > span:nth-child(30) {
     animation: fade-in 0.8s 3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(36) {
+#aboutUs p > span:nth-child(31) {
     animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(37) {
+#aboutUs p > span:nth-child(32) {
     animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(38) {
+#aboutUs p > span:nth-child(33) {
     animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(39) {
+#aboutUs p > span:nth-child(34) {
     animation: fade-in 0.8s 3.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(40) {
+#aboutUs p > span:nth-child(35) {
     animation: fade-in 0.8s 4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(41) {
+#aboutUs p > span:nth-child(36) {
     animation: fade-in 0.8s 4.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(42) {
+#aboutUs p > span:nth-child(37) {
     animation: fade-in 0.8s 4.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(43) {
+#aboutUs p > span:nth-child(38) {
     animation: fade-in 0.8s 4.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(44) {
+#aboutUs p > span:nth-child(39) {
     animation: fade-in 0.8s 4.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(45) {
+#aboutUs p > span:nth-child(40) {
     animation: fade-in 0.8s 4.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(46) {
+#aboutUs p > span:nth-child(41) {
     animation: fade-in 0.8s 4.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(47) {
+#aboutUs p > span:nth-child(42) {
     animation: fade-in 0.8s 4.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(48) {
+#aboutUs p > span:nth-child(43) {
     animation: fade-in 0.8s 4.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-#aboutUs p > span:nth-child(49) {
+#aboutUs p > span:nth-child(44) {
     animation: fade-in 0.8s 4.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#aboutUs p > span:nth-child(45) {
+    animation: fade-in 0.8s 5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#aboutUs p > span:nth-child(46) {
+    animation: fade-in 0.8s 5.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#aboutUs p > span:nth-child(47) {
+    animation: fade-in 0.8s 5.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#aboutUs p > span:nth-child(48) {
+    animation: fade-in 0.8s 5.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#aboutUs p > span:nth-child(49) {
+    animation: fade-in 0.8s 5.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {

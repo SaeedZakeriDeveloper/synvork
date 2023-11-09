@@ -216,10 +216,9 @@ function playVideo() {
     }
 }
 
-
-var $cont = document.querySelector('.cont');
-var $elsArr = [].slice.call(document.querySelectorAll('.el'));
-var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+let $cont = document.querySelector('.cont');
+let $elsArr = [].slice.call(document.querySelectorAll('.el'));
+let $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
 
 setTimeout(function () {
     $cont.classList.remove('s--inactive');
@@ -321,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // About section
     const about_box_1 = document.getElementById('about_box_1');
     const about_h2_1 = document.getElementById('about_h2_1');
-    about_h2_1.addEventListener('click', function () {
+    about_box_1.addEventListener('click', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished machinery provides reliable production processes through rigorous testing and\n" +
             "                    inspections, increasing client confidence in equipment surpassing industry standards.";
@@ -331,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const about_box_2 = document.getElementById('about_box_2');
     const about_h2_2 = document.getElementById('about_h2_2');
-    about_h2_2.addEventListener('click', function () {
+    about_box_2.addEventListener('click', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished pharmaceutical machinery offers a cost-effective option with excellent performance,\n" +
             "                    saving on the high capital investment required for new equipment.";
@@ -341,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const about_box_3 = document.getElementById('about_box_3');
     const about_h2_3 = document.getElementById('about_h2_3');
-    about_h2_3.addEventListener('click', function () {
+    about_box_3.addEventListener('click', function () {
         const p = document.createElement('p');
         p.textContent = "SYNVORK specializes in customizing refurbished machines to fit unique production needs,\n" +
             "                    seamlessly\n" +
@@ -352,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const about_box_4 = document.getElementById('about_box_4');
     const about_h2_4 = document.getElementById('about_h2_4');
-    about_h2_4.addEventListener('click', function () {
+    about_box_4.addEventListener('click', function () {
         const p = document.createElement('p');
         p.textContent = "Refurbished machines in pharmaceutical production save time and money by allowing businesses to\n" +
             "                    quickly meet market demands, making them more efficient than new machines.";
