@@ -256,6 +256,8 @@ document.addEventListener('DOMContentLoaded', function () {
             " vial filling, and purification systems. Our proficiency extends from solid dosage" +
             " forms to up-stream and down-stream biopharmaceutical equipment."
         // Replace the h1 with the new paragraph
+        p.classList.add('fade-in');
+
         Information_1.replaceWith(p);
     });
 
@@ -272,6 +274,8 @@ document.addEventListener('DOMContentLoaded', function () {
         //   p.style.fontWeight = 'bold';
 
         // Replace the h1 with the new paragraph
+        p.classList.add('fade-in');
+
         Information_2.replaceWith(p);
     });
 
@@ -289,6 +293,8 @@ document.addEventListener('DOMContentLoaded', function () {
         //   p.style.fontWeight = 'bold';
 
         // Replace the h1 with the new paragraph
+        p.classList.add('fade-in');
+
         Information_3.replaceWith(p);
     });
 
@@ -306,6 +312,8 @@ document.addEventListener('DOMContentLoaded', function () {
         //   p.style.fontWeight = 'bold';
 
         // Replace the h1 with the new paragraph
+        p.classList.add('fade-in');
+
         Information_4.replaceWith(p);
     });
 
