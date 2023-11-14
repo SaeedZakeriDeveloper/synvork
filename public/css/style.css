@@ -205,7 +205,7 @@ header .container nav ul li {
 header .container nav ul li a {
     display: block;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 3.5px;
     color: white;
     padding: 1.2rem 2.6rem;
@@ -988,7 +988,7 @@ section#video > div:nth-child(1) {
     }
 
     header + section > div > p {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     .title-container > p {
@@ -1084,7 +1084,7 @@ header + section {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/modern-chemical-production-equipment-found-inside-manufacture-background.jpg");
+    background-image: url("../img/IMG_1718.JPG");
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1101,7 +1101,7 @@ header + section:hover > div {
 }
 
 header + section > div > h1 {
-    color: white;
+    color: black;
     width: 86vw;
     margin-bottom: 30px;
     font-weight: 800;
@@ -1112,10 +1112,10 @@ header + section > div > h1 {
 }
 
 header + section > div > p {
-    margin-top: 70px;
+    margin-top: 30px;
     width: 70vw;
     overflow: hidden;
-    color: white;
+    color: black;
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 600;
@@ -2131,6 +2131,19 @@ section#contact > div:nth-child(2) > a:hover {
     }
 }
   
+
+
+
+
+
+
+
+
+
+
+
+/* #################################carosel#################################### */
+
 
 
 
