@@ -264,3 +264,69 @@ section::before {
 .valid {
     border-bottom: none;
 }
+
+@media screen and (max-width: 767px) {
+    .modal-content {
+        max-width: 90%;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 8px 15px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 70px auto;
+    /* Adjust this value as needed */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    max-width: 500px;
+    animation: slideDown 1s;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin-top: 50px;
+        /* Adjust this value as needed */
+    }
+}
+
+.close {
+    color: #c1542d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    /*color: white;*/
+    text-decoration: none;
+    cursor: pointer;
+}
