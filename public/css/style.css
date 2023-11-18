@@ -958,7 +958,7 @@ header + section {
 }
 
 section#video {
-    padding: 0 3rem !important;
+    padding: 0 3rem 6rem 3rem !important;
 }
 
 section#video > div:nth-child(1) {
@@ -1389,7 +1389,7 @@ section#contact > div:nth-child(2) > a:hover {
 .cont {
     position: relative;
     overflow: hidden;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 190px);
     padding: 30px 70px 100px 70px;
 }
 
@@ -2130,16 +2130,6 @@ section#contact > div:nth-child(2) > a:hover {
         opacity: 1;
     }
 }
-  
-
-
-
-
-
-
-
-
-
 
 
 /* #################################carosel#################################### */

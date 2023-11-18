@@ -62,7 +62,7 @@
     color: #ffffff;
     background-color: #1e1e22;
     overflow: hidden;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 110px);
     min-height: 400px;
   }
   .slideshow__slide {
