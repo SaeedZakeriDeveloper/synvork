@@ -128,6 +128,499 @@ function changeLanguage() {
 }
 
 window.addEventListener('scroll', function () {
+
+    // aboutUs section
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(1)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_1');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(2)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_2');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(3)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_3');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(4)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_4');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(5)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_5');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(6)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_6');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(7)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_7');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(8)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_8');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(9)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_9');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(10)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_10');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(11)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_11');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(12)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_12');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(13)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_13');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(14)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_14');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(15)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_15');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(16)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_16');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(17)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_17');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(18)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_18');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(19)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_19');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(20)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_20');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(21)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_21');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(22)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_22');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(23)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_23');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(24)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_24');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(25)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_25');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(26)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_26');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(27)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_27');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(28)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_28');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(29)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_29');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(30)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_30');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(31)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_31');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(32)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_32');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(33)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_33');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(34)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_34');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(35)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_35');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(36)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_36');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(37)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_37');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(38)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_38');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(39)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_39');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(40)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_40');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(41)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_41');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(42)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_42');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(43)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_43');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(44)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_44');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(45)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_45');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(46)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_46');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(47)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_47');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(48)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_48');
+        }
+    }
+
+    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(49)');
+    for (var i = 0; i < animatedElements.length; i++) {
+        var element = animatedElements[i];
+        var positionFromTop = element.getBoundingClientRect().top;
+
+        if (positionFromTop - window.innerHeight <= 0) {
+            element.classList.add('animation_49');
+        }
+    }
+
+    // Information section
     var animatedElements = document.querySelectorAll('.bounceToLeftBox');
     for (var i = 0; i < animatedElements.length; i++) {
         var element = animatedElements[i];
