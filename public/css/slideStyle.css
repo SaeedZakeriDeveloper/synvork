@@ -263,8 +263,8 @@
   
   @media (max-width: 699px) {
     .slideshow__slide-caption-title {
-      font-size: 40px;
-      margin-bottom: 150px;
+      font-size: 35px;
+      /*margin-bottom: 150px;*/
     }
   
     .slideshow.-full .slideshow__slide-caption-title {
@@ -700,7 +700,7 @@
   }
   
   .o-hsub::before {
-    content: "";
+    /*content: "";*/
     display: inline-block;
     vertical-align: middle;
     border-bottom: 1px solid;
