@@ -775,8 +775,8 @@ input::placeholder {
     box-sizing: border-box;
     object-fit: cover;
     background-blend-mode: luminosity;
-    transition: .5s;
-    animation: all 1s ease-in-out;
+    transition: all 0.5s;
+    /*animation: transition 0.5s ease-in-out;*/
     cursor: pointer;
 }
 
