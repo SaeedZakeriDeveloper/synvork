@@ -6,588 +6,790 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Termina&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Termina&display=swap"> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/1690361517.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/slideStyle.css">
+    <link rel="icon" href="./img/1690361517.ico" type="image/x-icon"/>
     <title>synvork</title>
 </head>
 
 <body>
 
-    <i class='fas fa-arrow-alt-circle-up' onclick="topFunction()" id="upBtn" title="Go to top"></i>
+<i class='fas fa-arrow-alt-circle-up' onclick="topFunction()" id="upBtn" title="Allez en haut"></i>
 
-    <header>
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="logo">
-                    <a href="#home"><img src="img/NewLOGO.jpg" alt="logo" style=" width: 17rem; height: auto;"></a>
-                </div>
-                <div class="languageBtn">
-                    <select id="languageSelect" onchange="changeLanguage()" class="form-select"
-                        aria-label="Default select example">
-                        <option value="1" selected>French</option>
-                        <option value="2">English</option>
-                    </select>
-                </div>
+<header>
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <div class="logo">
+                <a href="#home"><img src="img/NewLOGO.jpg" alt="logo" style=" width: 17rem; height: auto;"></a>
             </div>
-            <i class="fas fa-bars menu-bar"></i>
-            <nav style="margin-bottom: -7.5px;">
-                <ul style="margin-bottom: 0 !important;">
-                    <li><a href="#home" data-lang="home">ACCUEIL</a></li>
-                    <li><a href="#aboutUs" data-lang="aboutUs">À PROPOS DE NOUS</a></li>
-                    <li><a href="#services" data-lang="services">SERVICES</a></li>
-                    <li><a href="#contact" data-lang="contact">CONTACT</a></li>
-                </ul>
-            </nav>
+            <div class="languageBtn">
+                <select id="languageSelect" onchange="changeLanguage()" class="form-select"
+                        aria-label="Default select example">
+                    <option value="1" selected>French</option>
+                    <option value="2">English</option>
+                </select>
+            </div>
         </div>
-    </header>
+        <i class="fas fa-bars menu-bar"></i>
+        <nav style="margin-bottom: -7.5px;">
+            <ul style="margin-bottom: 0 !important;">
+                <li><a href="#home" data-lang="home">ACCUEIL</a></li>
+                <li><a href="#aboutUs" data-lang="aboutUs">À PROPOS DE NOUS</a></li>
+                <li><a href="#services" data-lang="services">SERVICES</a></li>
+                <li><a href="#contact" data-lang="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <section id="home">
-        <div>
-            <h1>Notre Mission et Vision</h1>
+<section id="home">
+    <div>
+        <h1>Notre Mission et Vision</h1>
+        <p>
+            Révolutionner la fabrication pharmaceutique : Efficacité durable, innovation abordable et fiabilité avec
+            SYNVORK.
+        </p>
+    </div>
+</section>
+
+<section id="aboutUs" class="Information" style="margin-top: 70px !important;">
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center ">
+        <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox">
+            <h3>À propos de nous</h3>
             <p>
-                Révolutionner la fabrication pharmaceutique : Efficacité durable, innovation abordable et fiabilité avec
-                SYNVORK.
+                <span>Fondée</span>
+                <span>en</span>
+                <span>2023,</span>
+                <span>SYNVORK</span>
+                <span>est</span>
+                <span>une</span>
+                <span>entreprise</span>
+                <span>dynamique</span>
+                <span>et</span>
+                <span>novatrice</span>
+                <span>qui</span>
+                <span>débloque</span>
+                <span>l'excellence</span>
+                <span>dans</span>
+                <span>la</span>
+                <span>rénovation</span>
+                <span>de</span>
+                <span>machines</span>
+                <span>pharmaceutiques.</span>
+                <span>Basée</span>
+                <span>en</span>
+                <span>France,</span>
+                <span>elle</span>
+                <span>a</span>
+                <span>pour</span>
+                <span>mission</span>
+                <span>de</span>
+                <span>redéfinir</span>
+                <span>l'excellence</span>
+                <span>dans</span>
+                <span>la</span>
+                <span>rénovation</span>
+                <span>de</span>
+                <span>machines</span>
+                <span>pharmaceutiques.</span>
+                <span>Avec</span>
+                <span>une</span>
+                <span>immatriculation</span>
+                <span>prévue</span>
+                <span>pour</span>
+                <span>l'année</span>
+                <span>2023,</span>
+                <span>nous</span>
+                <span>nous</span>
+                <span>engageons</span>
+                <span>dans</span>
+                <span>une</span>
+                <span>mission</span>
+                <span>pour</span>
+                <span>redéfinir</span>
+                <span>l'excellence</span>
+                <span>dans</span>
+                <span>la</span>
+                <span>rénovation</span>
+                <span>de</span>
+                <span>machines</span>
+                <span>pharmaceutiques.</span>
             </p>
         </div>
-    </section>
+        <div class="col-12 col-lg-5 d-flex justify-content-center">
+            <img src="./img/3d-covid19-vaccine.jpg" alt="Your Image">
+        </div>
+    </div>
+</section>
 
-    <section id="aboutUs" class="Information" style="margin-top: 70px !important;">
-        <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center ">
-            <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox">
-                <h3>À propos de nous</h3>
-                <p>
-                    <span>Fondée</span>
-                    <span>en</span>
-                    <span>2023,</span>
-                    <span>SYNVORK</span>
-                    <span>est</span>
-                    <span>une</span>
-                    <span>entreprise</span>
-                    <span>dynamique</span>
-                    <span>et</span>
-                    <span>novatrice</span>
-                    <span>qui</span>
-                    <span>débloque</span>
-                    <span>l'excellence</span>
-                    <span>dans</span>
-                    <span>la</span>
-                    <span>rénovation</span>
-                    <span>de</span>
-                    <span>machines</span>
-                    <span>pharmaceutiques.</span>
-                    <span>Basée</span>
-                    <span>en</span>
-                    <span>France,</span>
-                    <span>elle</span>
-                    <span>a</span>
-                    <span>pour</span>
-                    <span>mission</span>
-                    <span>de</span>
-                    <span>redéfinir</span>
-                    <span>l'excellence</span>
-                    <span>dans</span>
-                    <span>la</span>
-                    <span>rénovation</span>
-                    <span>de</span>
-                    <span>machines</span>
-                    <span>pharmaceutiques.</span>
-                    <span>Avec</span>
-                    <span>une</span>
-                    <span>immatriculation</span>
-                    <span>prévue</span>
-                    <span>pour</span>
-                    <span>l'année</span>
-                    <span>2023,</span>
-                    <span>nous</span>
-                    <span>nous</span>
-                    <span>engageons</span>
-                    <span>dans</span>
-                    <span>une</span>
-                    <span>mission</span>
-                    <span>pour</span>
-                    <span>redéfinir</span>
-                    <span>l'excellence</span>
-                    <span>dans</span>
-                    <span>la</span>
-                    <span>rénovation</span>
-                    <span>de</span>
-                    <span>machines</span>
-                    <span>pharmaceutiques.</span>
-                </p>
-            </div>
-            <div class="col-12 col-lg-5 d-flex justify-content-center">
-                <img src="./img/3d-covid19-vaccine.jpg" alt="Your Image">
-            </div>
+<section class="Information" id="information">
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
+        <div class="col-12 col-lg-5 d-flex justify-content-center order-1 order-lg-0 bounceToRightBox">
+            <img src="./img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg"
+                 alt="Your Image" class="left">
         </div>
-    </section>
+        <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToLeftBox">
+            <h3 id="Information_1">Expertise en Rénovation Spécialisée</h3>
+        </div>
+    </div>
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
+        <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToRightBox">
+            <h3 id="Information_2">Réanimation d'Équipement de Laboratoire</h3>
+        </div>
+        <div class="col-12 col-lg-5 d-flex justify-content-center bounceToLeftBox">
+            <img src="./img/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing-protective-clothing.jpg"
+                 alt="Your Image" class="left">
+        </div>
+    </div>
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
+        <div class="col-12 col-lg-5 d-flex justify-content-center order-1 order-lg-0 bounceToRightBox">
+            <img src="./img/plant-picture-clean-room-equipment-stainless-steel-machines.jpg" alt="Your Image"
+                 class="left">
+        </div>
+        <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToLeftBox">
+            <h3 id="Information_3">Notre Engagement envers la Qualité</h3>
+        </div>
+    </div>
+    <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
+        <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToRightBox">
+            <h3 id="Information_4">Durabilité et Rentabilité</h3>
+        </div>
+        <div class="col-12 col-lg-5 d-flex justify-content-center bounceToLeftBox">
+            <img src="./img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg"
+                 alt="Your Image" class="left">
+        </div>
+    </div>
+</section>
 
-    <section class="Information" id="information">
-        <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
-            <div class="col-12 col-lg-5 d-flex justify-content-center order-1 order-lg-0 bounceToRightBox">
-                <img src="./img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg"
-                    alt="Your Image" class="left">
+<section style="padding: 0 !important;">
+    <div id="wrapper">
+        <section class="slideshow" id="js-header">
+            <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+                <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+                     data-position="top" data-target="#js-header">
+                    <div class="slideshow__slide-background-load-wrap background-absolute">
+                        <div class="slideshow__slide-background-load background-absolute">
+                            <div class="slideshow__slide-background-wrap background-absolute">
+                                <div class="slideshow__slide-background background-absolute">
+                                    <div class="slideshow__slide-image-wrap background-absolute">
+                                        <div class="slideshow__slide-image background-absolute"
+                                             style="background-image: url('./img/Established\ Excellence\ 12.00.00\ PM.webp');">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__slide-caption">
+                    <div class="slideshow__slide-caption-text">
+                        <div class="s_container js-parallax" data-speed="2" data-position="top"
+                             data-target="#js-header">
+                            <h1 class="slideshow__slide-caption-title">Excellence Établie</h1>
+                            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                                    <span class="slideshow__slide-caption-subtitle-label">
+                                        Machines remises à neuf offrent des processus de production fiables grâce à des tests et inspections rigoureux, augmentant la confiance des clients envers un équipement surpassant les normes de l'industrie.
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToLeftBox">
-                <h3 id="Information_1">Expertise en Rénovation Spécialisée</h3>
-            </div>
-        </div>
-        <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
-            <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToRightBox">
-                <h3 id="Information_2">Réanimation d'Équipement de Laboratoire</h3>
-            </div>
-            <div class="col-12 col-lg-5 d-flex justify-content-center bounceToLeftBox">
-                <img src="./img/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing-protective-clothing.jpg"
-                    alt="Your Image" class="left">
-            </div>
-        </div>
-        <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
-            <div class="col-12 col-lg-5 d-flex justify-content-center order-1 order-lg-0 bounceToRightBox">
-                <img src="./img/plant-picture-clean-room-equipment-stainless-steel-machines.jpg" alt="Your Image"
-                    class="left">
-            </div>
-            <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToLeftBox">
-                <h3 id="Information_3">Notre Engagement envers la Qualité</h3>
-            </div>
-        </div>
-        <div class="container d-grid d-lg-flex justify-content-around align-items-baseline align-items-lg-center">
-            <div class="col-12 col-lg-5 text-center text-lg-start mt-5 mt-lg-0 textBox bounceToRightBox">
-                <h3 id="Information_4">Durabilité et Rentabilité</h3>
-            </div>
-            <div class="col-12 col-lg-5 d-flex justify-content-center bounceToLeftBox">
-                <img src="./img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg"
-                    alt="Your Image" class="left">
-            </div>
-        </div>
-    </section>
 
-    <section class="services">
-        <h3>Ce qui nous distingue ?</h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <div class="slideshow__slide js-slider-home-slide is-next" data-slide="2">
+                <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+                     data-position="top" data-target="#js-header">
+                    <div class="slideshow__slide-background-load-wrap background-absolute">
+                        <div class="slideshow__slide-background-load background-absolute">
+                            <div class="slideshow__slide-background-wrap background-absolute">
+                                <div class="slideshow__slide-background background-absolute">
+                                    <div class="slideshow__slide-image-wrap background-absolute">
+                                        <div class="slideshow__slide-image background-absolute"
+                                             style="background-image: url('https://images.pexels.com/photos/110649/pexels-photo-110649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920');">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__slide-caption">
+                    <div class="slideshow__slide-caption-text">
+                        <div class="s_container js-parallax" data-speed="2" data-position="top"
+                             data-target="#js-header">
+                            <h1 class="slideshow__slide-caption-title">Efficacité abordable</h1>
+                            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                                <span class="slideshow__slide-caption-subtitle-label">
+                                    Les machines pharmaceutiques reconditionnées offrent une option économique avec d'excellentes performances, permettant d'économiser sur l'investissement en capital élevé requis pour les nouveaux équipements.
+                                     </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="3">
+                <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+                     data-position="top" data-target="#js-header">
+                    <div class="slideshow__slide-background-load-wrap background-absolute">
+                        <div class="slideshow__slide-background-load background-absolute">
+                            <div class="slideshow__slide-background-wrap background-absolute">
+                                <div class="slideshow__slide-background background-absolute">
+                                    <div class="slideshow__slide-image-wrap background-absolute">
+                                        <div class="slideshow__slide-image background-absolute"
+                                             style="background-image: url('https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920');">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__slide-caption">
+                    <div class="slideshow__slide-caption-text">
+                        <div class="s_container js-parallax" data-speed="2" data-position="top"
+                             data-target="#js-header">
+                            <h1 class="slideshow__slide-caption-title">Configuration personnalisée</h1>
+                            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                                <span class="slideshow__slide-caption-subtitle-label">
+                                    SYNVORK se spécialise dans la personnalisation de machines reconditionnées pour répondre aux besoins de production uniques, en les intégrant de manière transparente dans les lignes de production existantes.
+                                     </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideshow__slide js-slider-home-slide is-prev" data-slide="4">
+                <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+                     data-position="top" data-target="#js-header">
+                    <div class="slideshow__slide-background-load-wrap background-absolute">
+                        <div class="slideshow__slide-background-load background-absolute">
+                            <div class="slideshow__slide-background-wrap background-absolute">
+                                <div class="slideshow__slide-background background-absolute">
+                                    <div class="slideshow__slide-image-wrap background-absolute">
+                                        <div class="slideshow__slide-image background-absolute"
+                                             style="background-image: url('https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920');">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slideshow__slide-caption">
+                    <div class="slideshow__slide-caption-text">
+                        <div class="s_container js-parallax" data-speed="2" data-position="top"
+                             data-target="#js-header">
+                            <h1 class="slideshow__slide-caption-title">Mise en œuvre rapide</h1>
+                            <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                                <span class="slideshow__slide-caption-subtitle-label">
+                                Les machines reconditionnées dans la production pharmaceutique permettent de gagner du temps et de l'argent en permettant aux entreprises de répondre rapidement aux demandes du marché, les rendant ainsi plus efficaces que les machines neuves.
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="c-header-home_footer">
+                <div class="o-container">
+                    <div class="c-header-home_controls -nomobile o-button-group">
+                        <div class="js-parallax is-inview mb-4 mb-lg-0" data-speed="1" data-position="top"
+                             data-target="#js-header">
+                            <button class="o-button -white -square -left js-slider-home-button js-slider-home-prev"
+                                    type="button">
+                                    <span class="o-button_label">
+                                        <svg class="o-button_icon" role="img">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-prev">
+                                            </use>
+                                        </svg>
+                                    </span>
+                            </button>
+                            <button class="o-button -white -square js-slider-home-button js-slider-home-next"
+                                    type="button">
+                                    <span class="o-button_label">
+                                        <svg class="o-button_icon" role="img">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-next">
+                                            </use>
+                                        </svg>
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <div>
+
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol viewBox="0 0 18 18" id="arrow-next">
+                    <path id="arrow-next-arrow.svg"
+                          d="M12.6,9L4,17.3L4.7,18l8.5-8.3l0,0L14,9l0,0l-0.7-0.7l0,0L4.7,0L4,0.7L12.6,9z"/>
+                </symbol>
+                <symbol viewBox="0 0 18 18" id="arrow-prev">
+                    <path id="arrow-prev-arrow.svg"
+                          d="M14,0.7L13.3,0L4.7,8.3l0,0L4,9l0,0l0.7,0.7l0,0l8.5,8.3l0.7-0.7L5.4,9L14,0.7z"/>
+                </symbol>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <h3>Ce qui nous distingue ?</h3>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center p-2">
-                        <div class="service-box">
-                            <h2>Rénovation de Machines</h2>
-                            <p>
-                                Rénovation complète des machines pharmaceutiques, incluant l'inspection, le nettoyage,
-                                et la réparation des pièces défectueuses
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Tests et Validation</h2>
-                            <p>
-                                Réalisation de services de tests et de validation pour garantir que les machines
-                                rénovées respectent les
-                                exigences
-                                réglementaires et les normes de l'industrie.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Support Technique</h2>
-                            <p>
-                                Support technique continu et assistance pour les clients, assurant un fonctionnement
-                                fluide des machines.
-                                Services de maintenance pour maintenir l'équipement en parfait état.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Disponibilité Pièces</h2>
-                            <p>
-                                Provision d'un accès à diverses pièces de rechange pour les machines pharmaceutiques
-                                afin de réduire les temps d'arrêt lors du remplacement de composants.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center p-2">
-                        <div class="service-box">
-                            <h2>Assurance Qualité</h2>
-                            <p>
-                                Processus rigoureux de contrôle qualité pour garantir la fiabilité, la précision et la
-                                sécurité de
-                                l'équipement rénové.
-                                Conformité aux réglementations et normes de l'industrie.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Analyse des Coûts</h2>
-                            <p>
-                                Fourniture d'analyses de coûts et de comparaisons entre l'achat de nouvelles machines et
-                                le choix
-                                d'équipements rénovés.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Formation et Éducation</h2>
-                            <p>
-                                Proposition de programmes de formation et de ressources éducatives pour aider les
-                                clients à maximiser
-                                les avantages des machines rénovées.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Recherche et Développement</h2>
-                            <p>
-                                Investissement dans la recherche et le développement pour améliorer les techniques de
-                                rénovation et
-                                s'adapter aux besoins évolutifs de l'industrie.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center p-2">
-                        <div class="service-box">
-                            <h2>Amélioration Continue</h2>
-                            <p>
-                                Engagement envers l'amélioration continue des processus de rénovation, de la technologie
-                                et de la
-                                prestation de services.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Expertise Technique</h2>
-                            <p>
-                                Accès à une équipe d'experts ayant une connaissance approfondie des machines
-                                pharmaceutiques et des
-                                tendances de l'industrie.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Documentation de Qualité</h2>
-                            <p>
-                                Fourniture d'une documentation complète du processus de rénovation, y compris des
-                                rapports d'inspection
-                                et des certificats de qualité.
-                            </p>
-                        </div>
-                        <div class="service-box">
-                            <h2>Collaboration Client</h2>
-                            <p>
-                                Collaboration étroite avec les clients pour comprendre leurs besoins uniques et fournir
-                                des solutions
-                                personnalisées.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Précédent</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
-            </button>
         </div>
-    </section>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Rénovation de Machines</h2>
+                        <p>
+                            Rénovation complète des machines pharmaceutiques, incluant l'inspection, le nettoyage,
+                            et la réparation des pièces défectueuses
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Tests et Validation</h2>
+                        <p>
+                            Réalisation de services de tests et de validation pour garantir que les machines
+                            rénovées respectent les
+                            exigences
+                            réglementaires et les normes de l'industrie.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Support Technique</h2>
+                        <p>
+                            Support technique continu et assistance pour les clients, assurant un fonctionnement
+                            fluide des machines.
+                            Services de maintenance pour maintenir l'équipement en parfait état.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Disponibilité Pièces</h2>
+                        <p>
+                            Provision d'un accès à diverses pièces de rechange pour les machines pharmaceutiques
+                            afin de réduire les temps d'arrêt lors du remplacement de composants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Assurance Qualité</h2>
+                        <p>
+                            Processus rigoureux de contrôle qualité pour garantir la fiabilité, la précision et la
+                            sécurité de
+                            l'équipement rénové.
+                            Conformité aux réglementations et normes de l'industrie.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Analyse des Coûts</h2>
+                        <p>
+                            Fourniture d'analyses de coûts et de comparaisons entre l'achat de nouvelles machines et
+                            le choix
+                            d'équipements rénovés.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Formation et Éducation</h2>
+                        <p>
+                            Proposition de programmes de formation et de ressources éducatives pour aider les
+                            clients à maximiser
+                            les avantages des machines rénovées.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Recherche et Développement</h2>
+                        <p>
+                            Investissement dans la recherche et le développement pour améliorer les techniques de
+                            rénovation et
+                            s'adapter aux besoins évolutifs de l'industrie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="service-box">
+                        <h2>Amélioration Continue</h2>
+                        <p>
+                            Engagement envers l'amélioration continue des processus de rénovation, de la technologie
+                            et de la
+                            prestation de services.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Expertise Technique</h2>
+                        <p>
+                            Accès à une équipe d'experts ayant une connaissance approfondie des machines
+                            pharmaceutiques et des
+                            tendances de l'industrie.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Documentation de Qualité</h2>
+                        <p>
+                            Fourniture d'une documentation complète du processus de rénovation, y compris des
+                            rapports d'inspection
+                            et des certificats de qualité.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <h2>Collaboration Client</h2>
+                        <p>
+                            Collaboration étroite avec les clients pour comprendre leurs besoins uniques et fournir
+                            des solutions
+                            personnalisées.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+</section>
 
-    <section id="video">
-        <div class="d-md-flex justify-content-between align-items-center">
-            <div class="w-100 mb-3">
-                <div class="arrow-container">
-                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        aria-hidden="true" class="svelte-1iyybxb right">
-                        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
-                            d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z">
-                        </path>
+<section id="video">
+    <div class="d-md-flex justify-content-between align-items-center">
+        <div class="w-100 mb-3">
+            <div class="arrow-container">
+                <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                     aria-hidden="true" class="svelte-1iyybxb right">
+                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="title-container">
+                <p>
+                    Approvisionnement d'Équipements
+                </p>
+                <h2>Portée Mondiale</h2>
+            </div>
+        </div>
+        <div class="w-100 position-relative">
+            <video src="./img/Filling-Station.mp4" autoplay loop muted playsinline id="synvork-video"
+                   class="videoBack"></video>
+            <button id="video-button" class="video-button" onclick="playVideo()">
+                <div>
+                    <svg id="PauseSvg" class="d-inline-block" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" role="img">
+                        <title>Pause</title>
+                        <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
+                        <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
+                    </svg>
+                    <svg id="PlaySvg" class="d-none" width="12" height="14" viewBox="0 0 12 14" fill="none"
+                         xmlns="http://www.w3.org/2000/svg" role="img">
+                        <title>Lecture</title>
+                        <path d="M12 7L0 14L6.1196e-07 0L12 7Z" fill="currentColor"></path>
                     </svg>
                 </div>
-                <div class="title-container">
-                    <p>
-                        Approvisionnement d'Équipements
-                    </p>
-                    <h2>Portée Mondiale</h2>
-                </div>
-            </div>
-            <div class="w-100 position-relative">
-                <video src="./img/Filling-Station.mp4" autoplay loop muted playsinline id="synvork-video"
-                    class="videoBack"></video>
-                <button id="video-button" class="video-button" onclick="playVideo()">
-                    <div>
-                        <svg id="PauseSvg" class="d-inline-block" width="12" height="14" viewBox="0 0 12 14" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" role="img">
-                            <title>Pause</title>
-                            <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
-                            <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
-                        </svg>
-                        <svg id="PlaySvg" class="d-none" width="12" height="14" viewBox="0 0 12 14" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" role="img">
-                            <title>Lecture</title>
-                            <path d="M12 7L0 14L6.1196e-07 0L12 7Z" fill="currentColor"></path>
-                        </svg>
-                    </div>
-                </button>
-            </div>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Pourquoi Choisir des Machines Rénovées</h2>
-            <div class="about-container">
-                <div class="box" id="about_box_1">
-                    <div class="m-auto">
-                        <i class="fas fa-hand-holding"></i>
-                        <h2 id="about_h2_1">Excellence Établie</h2>
-                    </div>
+
+<!-- <section class="about" id="about">
+    <div class="container">
+        <h2>Why Choose Refurbished Machinery</h2>
+        <div class="about-container">
+            <div class="box" id="about_box_en_1">
+                <div class="m-auto">
+                    <i class="fas fa-hand-holding"></i>
+                    <h2 id="about_h2_en_1">Established Excellence</h2>
                 </div>
-                <div class="box" id="about_box_2">
-                    <div class="m-auto">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h2 id="about_h2_2">Efficacité Abordable</h2>
-                    </div>
+            </div>
+            <div class="box" id="about_box_en_2">
+                <div class="m-auto">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h2 id="about_h2_en_2">Affordable Efficiency</h2>
                 </div>
-                <div class="box" id="about_box_3">
-                    <div class="m-auto">
-                        <i class="fab fa-bitbucket"></i>
-                        <h2 id="about_h2_3">Configuration Personnalisée</h2>
-                    </div>
+            </div>
+            <div class="box" id="about_box_en_3">
+                <div class="m-auto">
+                    <i class="fab fa-bitbucket"></i>
+                    <h2 id="about_h2_en_3">Custom Configuration</h2>
                 </div>
-                <div class="box" id="about_box_4">
-                    <div class="m-auto">
-                        <i class="fas fa-shield-alt"></i>
-                        <h2 id="about_h2_4">Mise en Œuvre Rapide</h2>
-                    </div>
+            </div>
+            <div class="box" id="about_box_en_4">
+                <div class="m-auto">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2 id="about_h2_en_4">Rapid Implementation</h2>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="services">
-        <h1>
-            Services
-        </h1>
-        <div class="cont s--inactive">
-            <div class="cont__inner">
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h3 class="el__heading">Machines de Formes Galéniques Solides</h3>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__text">Machines de Formes Galéniques Solides
-                                    <p>
-                                        Machines d'Ensachage<br>
-                                        Machines de Cartonnage<br>
-                                        Presses à Comprimés<br>
-                                        Compteuses de Comprimés<br>
-                                        Machines de Remplissage de Gélules<br>
-                                        Machines d'Enrobage
-                                    </p>
-                                </div>
-                                <div class="el__close-btn">
+    </div>
+</section> -->
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="el__index">
-                        <div class="el__index-back">1</div>
-                        <div class="el__index-front">
-                            <div class="el__index-overlay" data-index="1">1</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">Lignes Injectables</h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__text">Lignes Injectables
-                                    <p>
-                                        Lignes de Remplissage de Fioles<br>
-                                        Lignes de Remplissage d'Ampoules<br>
-                                        Lignes de Seringues Préremplies<br>
-                                        Machines Assembleuses de Stylos<br>
-                                        Machines de Remplissage de Cartouches
-                                    </p>
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="el__index">
-                        <div class="el__index-back">2</div>
-                        <div class="el__index-front">
-                            <div class="el__index-overlay" data-index="2">2</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">Équipement Biopharmaceutique</h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__text">Équipement Biopharmaceutique
-                                    <p>
-                                        Fermenteurs (Processus Amont)<br>
-                                        Bioréacteurs (Processus Amont)<br>
-                                        Équipements et Systèmes de Purification (Processus Aval)
-                                    </p>
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="el__index">
-                        <div class="el__index-back">3</div>
-                        <div class="el__index-front">
-                            <div class="el__index-overlay" data-index="3">3</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">Équipement de Laboratoire</h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__text">Équipement de Laboratoire
-                                    <p>
-                                        Fours<br>
-                                        Congélateurs Avancés (-80 °C et -150 °C)<br>
-                                        Centrifugeuses<br>
-                                        Systèmes de Chromatographie, comprenant :<br>
-                                        HPLC (Chromatographie Liquide Haute Performance)<br>
-                                        UPLC (Chromatographie Liquide Ultra Haute Performance)<br>
-                                        GC (Chromatographie en Phase Gazeuse)<br>
-                                        HPLC Préparative
-                                    </p>
-                                </div>
-                                <div class="el__close-btn"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="el__index">
-                        <div class="el__index-back">4</div>
-                        <div class="el__index-front">
-                            <div class="el__index-overlay" data-index="4">4</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- el end -->
-                <!-- el start -->
-                <div class="el">
-                    <div class="el__overflow">
-                        <div class="el__inner">
-                            <div class="el__bg"></div>
-                            <div class="el__preview-cont">
-                                <h2 class="el__heading">Section 5</h2>
-                            </div>
-                            <div class="el__content">
-                                <div class="el__text">Section 5
-                                    <p>
 
-                                    </p>
-                                </div>
-                                <div class="el__close-btn"></div>
+<section id="services">
+    <h1>
+        Services
+    </h1>
+
+    <div class="waviy">
+        <span style="--i:1">S</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">R</span>
+        <span style="--i:4">V</span>
+        <span style="--i:5">I</span>
+        <span style="--i:6">C</span>
+        <span style="--i:7">E</span>
+        <span style="--i:8">S</span>
+    </div>
+
+    <div class="cont s--inactive">
+        <div class="cont__inner">
+            <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h3 class="el__heading">Machines de Formes Galéniques Solides</h3>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">Machines de Formes Galéniques Solides
+                                <p>
+                                    Machines d'Ensachage<br>
+                                    Machines de Cartonnage<br>
+                                    Presses à Comprimés<br>
+                                    Compteuses de Comprimés<br>
+                                    Machines de Remplissage de Gélules<br>
+                                    Machines d'Enrobage
+                                </p>
+                            </div>
+                            <div class="el__close-btn">
+
                             </div>
                         </div>
                     </div>
-                    <div class="el__index">
-                        <div class="el__index-back">5</div>
-                        <div class="el__index-front">
-                            <div class="el__index-overlay" data-index="5">5</div>
-                        </div>
+                </div>
+                <div class="el__index">
+                    <div class="el__index-back">1</div>
+                    <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="1">1</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="contact d-lg-flex" id="contact">
-        <div class="col-lg-7">
-        </div>
-        <div class="col-lg-5">
-            <h2>Entrez en contact</h2>
-            <p>
-                Pour toute question ou partenariat, contactez-nous pour en savoir plus sur nos services. </p>
-            <a class="" href="contactUs_en.html">
-                <span class="">Contactez-nous</span>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="box">
-                <img src="img/SYNVORK Logo.png" alt="" style="width: 31rem; height: auto;">
-            </div>
-            <div class="box">
-                <h4>Téléphone</h4>
-                <a href="tel:3398-247-8005">+33982478005</a>
-                <h4>Portable</h4>
-                <a href="tel:3376-374-2888">+33763742888</a>
-                <span>48, route de Brumath - 67670 Mommenheim</span>
-            </div>
-            <div class="box">
-                <h4>Abonnez-vous à notre newsletter</h4>
-                <div class="form" style="display: flex; justify-content: space-between; align-items: baseline;">
-                    <div class="col-9">
-                        <input type="text" name="" mailto:placeholder="your@email.com">
-                    </div>
-                    <div class="col-2">
-                        <button style="padding: 7px !important;">send</button>
-                    </div>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.instagram.com/saeeed__z/"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="https://wa.me/33783496909"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy;2023 Tous droits réservés <span>Saeed Zakeri</span></p>
-        </div>
-    </footer>
-
-    <div class="multi-spinner-container" id="loader">
-        <div class="multi-spinner">
-            <div class="multi-spinner">
-                <div class="multi-spinner">
-                    <div class="multi-spinner">
-                        <div class="multi-spinner">
-                            <div class="multi-spinner"></div>
+            <!-- el end -->
+            <!-- el start -->
+            <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h2 class="el__heading">Lignes Injectables</h2>
                         </div>
+                        <div class="el__content">
+                            <div class="el__text">Lignes Injectables
+                                <p>
+                                    Lignes de Remplissage de Fioles<br>
+                                    Lignes de Remplissage d'Ampoules<br>
+                                    Lignes de Seringues Préremplies<br>
+                                    Machines Assembleuses de Stylos<br>
+                                    Machines de Remplissage de Cartouches
+                                </p>
+                            </div>
+                            <div class="el__close-btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="el__index">
+                    <div class="el__index-back">2</div>
+                    <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="2">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h2 class="el__heading">Équipement Biopharmaceutique</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">Équipement Biopharmaceutique
+                                <p>
+                                    Fermenteurs (Processus Amont)<br>
+                                    Bioréacteurs (Processus Amont)<br>
+                                    Équipements et Systèmes de Purification (Processus Aval)
+                                </p>
+                            </div>
+                            <div class="el__close-btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="el__index">
+                    <div class="el__index-back">3</div>
+                    <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="3">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h2 class="el__heading">Équipement de Laboratoire</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">Équipement de Laboratoire
+                                <p>
+                                    Fours<br>
+                                    Congélateurs Avancés (-80 °C et -150 °C)<br>
+                                    Centrifugeuses<br>
+                                    Systèmes de Chromatographie, comprenant :<br>
+                                    HPLC (Chromatographie Liquide Haute Performance)<br>
+                                    UPLC (Chromatographie Liquide Ultra Haute Performance)<br>
+                                    GC (Chromatographie en Phase Gazeuse)<br>
+                                    HPLC Préparative
+                                </p>
+                            </div>
+                            <div class="el__close-btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="el__index">
+                    <div class="el__index-back">4</div>
+                    <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="4">4</div>
+                    </div>
+                </div>
+            </div>
+            <!-- el end -->
+            <!-- el start -->
+            <div class="el">
+                <div class="el__overflow">
+                    <div class="el__inner">
+                        <div class="el__bg"></div>
+                        <div class="el__preview-cont">
+                            <h2 class="el__heading">Machines d'inspection</h2>
+                        </div>
+                        <div class="el__content">
+                            <div class="el__text">Machines d'inspection
+                                <p>
+                                    Machines d'inspection PFS
+                                    Machines d'inspection d'ampoules<br>
+                                    Machine d'inspection de flacons<br>
+                                    Machines d'inspection de combinés (pour systèmes de conditionnement primaire,
+                                    cartouches et fioles)
+                                </p>
+                            </div>
+                            <div class="el__close-btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="el__index">
+                    <div class="el__index-back">5</div>
+                    <div class="el__index-front">
+                        <div class="el__index-overlay" data-index="5">5</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+</section>
+
+<section class="contact d-lg-flex" id="contact">
+    <div class="col-lg-7">
+    </div>
+    <div class="col-lg-5">
+        <h2>
+            Entrez en contact
+        </h2>
+        <p>
+            Pour toute question ou partenariat, contactez-nous pour en savoir plus sur nos services.
+        </p>
+        <a class="" href="contactUs_en.html">
+            <span class="">Contactez-nous</span>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="box">
+            <img src="img/SYNVORK Logo.png" alt="" style="width: 31rem; height: auto;">
+        </div>
+        <div class="box">
+            <h4>Téléphone</h4>
+            <a href="tel:3398-247-8005">+33982478005</a>
+            <h4>Portable</h4>
+            <a href="tel:3376-374-2888">+33763742888</a>
+            <span>48, route de Brumath - 67670 Mommenheim</span>
+        </div>
+        <div class="box">
+            <h4>Abonnez-vous à notre newsletter</h4>
+            <div class="form" style="display: flex; justify-content: space-between; align-items: baseline;">
+                <div class="col-9">
+                    <input type="text" name="" mailto:placeholder="your@email.com">
+                </div>
+                <div class="col-2">
+                    <button style="padding: 7px !important;">send</button>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/saeeed__z/"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://wa.me/33783496909"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;2023 Tous droits réservés <span>Synvork</span></p>
+    </div>
+</footer>
+
+<div class="multi-spinner-container" id="loader">
+    <div class="multi-spinner">
+        <div class="multi-spinner">
+            <div class="multi-spinner">
+                <div class="multi-spinner">
+                    <div class="multi-spinner">
+                        <div class="multi-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/slideMain.js"></script>
 </body>
 
 </html>

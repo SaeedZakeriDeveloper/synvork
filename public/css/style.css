@@ -1084,7 +1084,7 @@ header + section {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/IMG_1718.JPG");
+    background-image: url("../img/shutterstock_1364514662.webp");
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1101,7 +1101,7 @@ header + section:hover > div {
 }
 
 header + section > div > h1 {
-    color: black;
+    color: white;
     width: 86vw;
     margin-bottom: 30px;
     font-weight: 800;
@@ -1115,7 +1115,7 @@ header + section > div > p {
     margin-top: 30px;
     width: 70vw;
     overflow: hidden;
-    color: black;
+    color: white;
     margin-bottom: 30px;
     font-size: 28px;
     font-weight: 600;
@@ -2001,7 +2001,7 @@ section#contact > div:nth-child(2) > a:hover {
     animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.animation_23{
+.animation_23 {
     animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
@@ -2037,7 +2037,7 @@ section#contact > div:nth-child(2) > a:hover {
     animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.animation_32{
+.animation_32 {
     animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
@@ -2105,8 +2105,44 @@ section#contact > div:nth-child(2) > a:hover {
     animation: fade-in 0.8s 5.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.animation_49{
+.animation_49 {
     animation: fade-in 0.8s 5.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_50 {
+    animation: fade-in 0.8s 5.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_51 {
+    animation: fade-in 0.8s 5.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_52 {
+    animation: fade-in 0.8s 5.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_53 {
+    animation: fade-in 0.8s 5.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_54 {
+    animation: fade-in 0.8s 5.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_55 {
+    animation: fade-in 0.8s 6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_56 {
+    animation: fade-in 0.8s 6.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_57 {
+    animation: fade-in 0.8s 6.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animation_58 {
+    animation: fade-in 0.8s 6.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
