@@ -776,6 +776,7 @@ input::placeholder {
     object-fit: cover;
     background-blend-mode: luminosity;
     transition: .5s;
+    animation: all 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -800,16 +801,18 @@ input::placeholder {
     padding-left: var(--s);
 }
 
-.Information img:hover {
-    margin-top: 10px;
-    padding: 0;
-}
-
 @media screen and (max-width: 550px) {
     .Information img {
         --s: 85vw; /* the image size */
         width: 85vw;
         height: 60vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Information img:hover {
+        margin-top: 10px;
+        padding: 0;
     }
 }
 
@@ -1799,7 +1802,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    background-image: url("");
+    background-image: url("../img/AdobeStock_182376032-scaled (2).webp");
 }
 
 .el:hover .el__bg:after {
