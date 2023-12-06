@@ -1553,7 +1553,7 @@ section#contact > div:nth-child(2) > a:hover {
     padding: 0;
     line-height: 1;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .el__text > p {
