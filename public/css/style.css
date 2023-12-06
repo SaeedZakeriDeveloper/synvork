@@ -1895,7 +1895,7 @@ section#contact > div:nth-child(2) > a:hover {
     }
 
     .el__text {
-        padding-top: 40px;
+        margin-top: 40px;
     }
 
     .el__index {
