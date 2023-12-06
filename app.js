@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'vahid.zakeri@synvork.fr',
-        pass: 'vbfzqygfwqgeaznh'
+        user: 'vahid@synvork.fr',
+        pass: 'ygrrxqrqvujaeeqc'
     }
 });
 
@@ -27,9 +27,9 @@ app.post('/submit_contactForm', (req, res) => {
     const message = body.message;
 
     var mailOptions = {
-        from: 'fixitmaster12@gmail.com',
-        to: 'admin-support@fix-it-masters.com',
-        subject: 'Contact our team from Fix-It-Masters',
+        from: 'vahid@synvork.fr',
+        to: 'vahid.zakeri@synvork.fr',
+        subject: 'Contact our team from synvork',
         text: `First Name: ${firstName}\n Last Name: ${lastName}\n Email: ${email}\n Contact Number: ${contactNumber}\n Message: ${message}`
     };
 
