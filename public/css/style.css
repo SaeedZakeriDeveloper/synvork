@@ -35,11 +35,11 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 1.6rem;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--whiteColor);
+    /*background-color: var(--whiteColor);*/
 }
 
 ::-webkit-scrollbar-thumb {
