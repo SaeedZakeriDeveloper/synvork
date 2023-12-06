@@ -780,6 +780,10 @@ input::placeholder {
     cursor: pointer;
 }
 
+.fatemeh {
+    transition: transform 1s;
+}
+
 .Information > .container:nth-child(1) img {
     background: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg") 100%/cover #000;
 }
@@ -1548,6 +1552,8 @@ section#contact > div:nth-child(2) > a:hover {
     word-break: break-word;
     padding: 0;
     line-height: 1;
+    height: 100%;
+    overflow: scroll;
 }
 
 .el__text > p {
