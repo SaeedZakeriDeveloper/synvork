@@ -38,10 +38,6 @@ body {
     width: 1rem;
 }
 
-::-webkit-scrollbar-track {
-    /*background-color: var(--whiteColor);*/
-}
-
 ::-webkit-scrollbar-thumb {
     background-color: var(--blueColor);
     border-radius: 1rem;
@@ -776,7 +772,6 @@ input::placeholder {
     object-fit: cover;
     background-blend-mode: luminosity;
     transition: all 0.5s;
-    /*animation: transition 0.5s ease-in-out;*/
     cursor: pointer;
 }
 

@@ -42,7 +42,6 @@ section::before {
     z-index: 2;
     padding: 40px;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
@@ -104,8 +103,7 @@ section::before {
 
 .container .contactForm {
     position: absolute;
-    padding: 70px 50px;
-    padding-left: 250px;
+    padding: 70px 50px 70px 250px;
     margin-left: 150px;
     width: calc(100% - 150px);
     height: 100%;
@@ -173,7 +171,6 @@ section::before {
 .container .contactForm .formBox .inputBox textarea:focus ~ span {
     transform: translateY(-20px);
     font-size: 12px;
-    font-weight: 400;
     letter-spacing: 1px;
     color: #095a55;
     font-weight: 500;
@@ -215,9 +212,8 @@ section::before {
     .container .contactForm {
         position: relative;
         width: calc(100% - 350px);
-        padding-left: 0px;
-        margin-left: 0px;
-        padding: 40px;
+        margin-left: 0;
+        padding: 40px 40px 40px 0;
         height: 550px;
         box-shadow: none;
     }
@@ -326,7 +322,6 @@ section::before {
 
 .close:hover,
 .close:focus {
-    /*color: white;*/
     text-decoration: none;
     cursor: pointer;
 }
