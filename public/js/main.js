@@ -24,52 +24,51 @@ window.addEventListener('scroll', () => {
 });
 
 function showSuccessMessage() {
-    var successModal = document.getElementById("successMessage");
+    let successModal = document.getElementById("successMessage");
     successModal.style.display = "block";
 }
 
 // Function to close the success message
 function closeSuccessMessage() {
-    var successModal = document.getElementById("successMessage");
+    let successModal = document.getElementById("successMessage");
     successModal.style.display = "none";
 }
 
 // Function to show the error message
 function showErrorMessage() {
-    var errorModal = document.getElementById("errorMessage");
+    let errorModal = document.getElementById("errorMessage");
     errorModal.style.display = "block";
 }
 
 // Function to close the error message
 function closeErrorMessage() {
-    var errorModal = document.getElementById("errorMessage");
+    let errorModal = document.getElementById("errorMessage");
     errorModal.style.display = "none";
 }
 
 function checkValidation(id) {
-    var element = document.getElementById(id);
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let element = document.getElementById(id);
+    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    if (id == 'email') {
-        if (element.value != '' && !element.value.match(validRegex)) {
+    if (id === 'email') {
+        if (element.value !== '' && !element.value.match(validRegex)) {
             element.className = 'invalid';
             element.value = 'invalid';
             return 0;
-        } else if (element.value != '' && element.value.match(validRegex)) {
+        } else if (element.value !== '' && element.value.match(validRegex)) {
             element.className = 'valid';
             return 1;
-        } else if (element.value == '') {
+        } else if (element.value === '') {
             element.className = 'invalid';
             element.value = 'required';
             return 0;
         }
-    } else if (element.value == '') {
+    } else if (element.value === '') {
         element.className = 'invalid';
         element.value = 'required';
         return 0;
     } else {
         element.className = 'valid';
-
         return 1;
     }
 }
@@ -89,7 +88,7 @@ document.getElementById("contactSubmitButton")?.addEventListener("click", functi
     list.forEach(x => {
         result += checkValidation(x);
     })
-    if (result == list.length) {
+    if (result === list.length) {
         fetch("/submit_contactForm", {
             method: "POST",
             body: JSON.stringify({
@@ -106,7 +105,7 @@ document.getElementById("contactSubmitButton")?.addEventListener("click", functi
             .then(response => {
                 showSuccessMessage();
                 list.forEach(x => {
-                    var element = document.getElementById(x);
+                    let element = document.getElementById(x);
                     element.value = '';
                     element.className = '';
                     element.placeholder = '';
@@ -120,9 +119,9 @@ document.getElementById("contactSubmitButton")?.addEventListener("click", functi
 
 function changeLanguage() {
     let element = document.getElementById("languageSelect");
-    if (element.value == '1') {
+    if (element.value === '1') {
         window.location.href = "index.html";
-    } else if (element.value == '2') {
+    } else if (element.value === '2') {
         window.location.href = "index_en.html";
     }
 }
@@ -130,630 +129,630 @@ function changeLanguage() {
 window.addEventListener('scroll', function () {
 
     // aboutUs section
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(1)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement1 = document.querySelectorAll('#aboutUs p > span:nth-child(1)');
+    for (let i = 0; i < animatedElement1.length; i++) {
+        let element = animatedElement1[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_1');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(2)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement2 = document.querySelectorAll('#aboutUs p > span:nth-child(2)');
+    for (let i = 0; i < animatedElement2.length; i++) {
+        let element = animatedElement2[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_2');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(3)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement3 = document.querySelectorAll('#aboutUs p > span:nth-child(3)');
+    for (let i = 0; i < animatedElement3.length; i++) {
+        let element = animatedElement3[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_3');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(4)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement4 = document.querySelectorAll('#aboutUs p > span:nth-child(4)');
+    for (let i = 0; i < animatedElement4.length; i++) {
+        let element = animatedElement4[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_4');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(5)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement5 = document.querySelectorAll('#aboutUs p > span:nth-child(5)');
+    for (let i = 0; i < animatedElement5.length; i++) {
+        let element = animatedElement5[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_5');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(6)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement6 = document.querySelectorAll('#aboutUs p > span:nth-child(6)');
+    for (let i = 0; i < animatedElement6.length; i++) {
+        let element = animatedElement6[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_6');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(7)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement7 = document.querySelectorAll('#aboutUs p > span:nth-child(7)');
+    for (let i = 0; i < animatedElement7.length; i++) {
+        let element = animatedElement7[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_7');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(8)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement8 = document.querySelectorAll('#aboutUs p > span:nth-child(8)');
+    for (let i = 0; i < animatedElement8.length; i++) {
+        let element = animatedElement8[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_8');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(9)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement9 = document.querySelectorAll('#aboutUs p > span:nth-child(9)');
+    for (let i = 0; i < animatedElement9.length; i++) {
+        let element = animatedElement9[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_9');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(10)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement10 = document.querySelectorAll('#aboutUs p > span:nth-child(10)');
+    for (let i = 0; i < animatedElement10.length; i++) {
+        let element = animatedElement10[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_10');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(11)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement11 = document.querySelectorAll('#aboutUs p > span:nth-child(11)');
+    for (let i = 0; i < animatedElement11.length; i++) {
+        let element = animatedElement11[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_11');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(12)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement12 = document.querySelectorAll('#aboutUs p > span:nth-child(12)');
+    for (let i = 0; i < animatedElement12.length; i++) {
+        let element = animatedElement12[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_12');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(13)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement13 = document.querySelectorAll('#aboutUs p > span:nth-child(13)');
+    for (let i = 0; i < animatedElement13.length; i++) {
+        let element = animatedElement13[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_13');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(14)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement14 = document.querySelectorAll('#aboutUs p > span:nth-child(14)');
+    for (let i = 0; i < animatedElement14.length; i++) {
+        let element = animatedElement14[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_14');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(15)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement15 = document.querySelectorAll('#aboutUs p > span:nth-child(15)');
+    for (let i = 0; i < animatedElement15.length; i++) {
+        let element = animatedElement15[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_15');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(16)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement16 = document.querySelectorAll('#aboutUs p > span:nth-child(16)');
+    for (let i = 0; i < animatedElement16.length; i++) {
+        let element = animatedElement16[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_16');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(17)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement17 = document.querySelectorAll('#aboutUs p > span:nth-child(17)');
+    for (let i = 0; i < animatedElement17.length; i++) {
+        let element = animatedElement17[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_17');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(18)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement18 = document.querySelectorAll('#aboutUs p > span:nth-child(18)');
+    for (let i = 0; i < animatedElement18.length; i++) {
+        let element = animatedElement18[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_18');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(19)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement19 = document.querySelectorAll('#aboutUs p > span:nth-child(19)');
+    for (let i = 0; i < animatedElement19.length; i++) {
+        let element = animatedElement19[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_19');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(20)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement20 = document.querySelectorAll('#aboutUs p > span:nth-child(20)');
+    for (let i = 0; i < animatedElement20.length; i++) {
+        let element = animatedElement20[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_20');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(21)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement21 = document.querySelectorAll('#aboutUs p > span:nth-child(21)');
+    for (let i = 0; i < animatedElement21.length; i++) {
+        let element = animatedElement21[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_21');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(22)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement22 = document.querySelectorAll('#aboutUs p > span:nth-child(22)');
+    for (let i = 0; i < animatedElement22.length; i++) {
+        let element = animatedElement22[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_22');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(23)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement23 = document.querySelectorAll('#aboutUs p > span:nth-child(23)');
+    for (let i = 0; i < animatedElement23.length; i++) {
+        let element = animatedElement23[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_23');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(24)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement24 = document.querySelectorAll('#aboutUs p > span:nth-child(24)');
+    for (let i = 0; i < animatedElement24.length; i++) {
+        let element = animatedElement24[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_24');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(25)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement25 = document.querySelectorAll('#aboutUs p > span:nth-child(25)');
+    for (let i = 0; i < animatedElement25.length; i++) {
+        let element = animatedElement25[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_25');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(26)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement26 = document.querySelectorAll('#aboutUs p > span:nth-child(26)');
+    for (let i = 0; i < animatedElement26.length; i++) {
+        let element = animatedElement26[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_26');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(27)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement27 = document.querySelectorAll('#aboutUs p > span:nth-child(27)');
+    for (let i = 0; i < animatedElement27.length; i++) {
+        let element = animatedElement27[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_27');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(28)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement28 = document.querySelectorAll('#aboutUs p > span:nth-child(28)');
+    for (let i = 0; i < animatedElement28.length; i++) {
+        let element = animatedElement28[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_28');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(29)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement29 = document.querySelectorAll('#aboutUs p > span:nth-child(29)');
+    for (let i = 0; i < animatedElement29.length; i++) {
+        let element = animatedElement29[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_29');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(30)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement30 = document.querySelectorAll('#aboutUs p > span:nth-child(30)');
+    for (let i = 0; i < animatedElement30.length; i++) {
+        let element = animatedElement30[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_30');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(31)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement31 = document.querySelectorAll('#aboutUs p > span:nth-child(31)');
+    for (let i = 0; i < animatedElement31.length; i++) {
+        let element = animatedElement31[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_31');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(32)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement32 = document.querySelectorAll('#aboutUs p > span:nth-child(32)');
+    for (let i = 0; i < animatedElement32.length; i++) {
+        let element = animatedElement32[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_32');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(33)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement33 = document.querySelectorAll('#aboutUs p > span:nth-child(33)');
+    for (let i = 0; i < animatedElement33.length; i++) {
+        let element = animatedElement33[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_33');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(34)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement34 = document.querySelectorAll('#aboutUs p > span:nth-child(34)');
+    for (let i = 0; i < animatedElement34.length; i++) {
+        let element = animatedElement34[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_34');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(35)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement35 = document.querySelectorAll('#aboutUs p > span:nth-child(35)');
+    for (let i = 0; i < animatedElement35.length; i++) {
+        let element = animatedElement35[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_35');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(36)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement36 = document.querySelectorAll('#aboutUs p > span:nth-child(36)');
+    for (let i = 0; i < animatedElement36.length; i++) {
+        let element = animatedElement36[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_36');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(37)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement37 = document.querySelectorAll('#aboutUs p > span:nth-child(37)');
+    for (let i = 0; i < animatedElement37.length; i++) {
+        let element = animatedElement37[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_37');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(38)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement38 = document.querySelectorAll('#aboutUs p > span:nth-child(38)');
+    for (let i = 0; i < animatedElement38.length; i++) {
+        let element = animatedElement38[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_38');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(39)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement39 = document.querySelectorAll('#aboutUs p > span:nth-child(39)');
+    for (let i = 0; i < animatedElement39.length; i++) {
+        let element = animatedElement39[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_39');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(40)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement40 = document.querySelectorAll('#aboutUs p > span:nth-child(40)');
+    for (let i = 0; i < animatedElement40.length; i++) {
+        let element = animatedElement40[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_40');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(41)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement41 = document.querySelectorAll('#aboutUs p > span:nth-child(41)');
+    for (let i = 0; i < animatedElement41.length; i++) {
+        let element = animatedElement41[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_41');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(42)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement42 = document.querySelectorAll('#aboutUs p > span:nth-child(42)');
+    for (let i = 0; i < animatedElement42.length; i++) {
+        let element = animatedElement42[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_42');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(43)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement43 = document.querySelectorAll('#aboutUs p > span:nth-child(43)');
+    for (let i = 0; i < animatedElement43.length; i++) {
+        let element = animatedElement43[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_43');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(44)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement44 = document.querySelectorAll('#aboutUs p > span:nth-child(44)');
+    for (let i = 0; i < animatedElement44.length; i++) {
+        let element = animatedElement44[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_44');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(45)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement45 = document.querySelectorAll('#aboutUs p > span:nth-child(45)');
+    for (let i = 0; i < animatedElement45.length; i++) {
+        let element = animatedElement45[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_45');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(46)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement46 = document.querySelectorAll('#aboutUs p > span:nth-child(46)');
+    for (let i = 0; i < animatedElement46.length; i++) {
+        let element = animatedElement46[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_46');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(47)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement47 = document.querySelectorAll('#aboutUs p > span:nth-child(47)');
+    for (let i = 0; i < animatedElement47.length; i++) {
+        let element = animatedElement47[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_47');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(48)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement48 = document.querySelectorAll('#aboutUs p > span:nth-child(48)');
+    for (let i = 0; i < animatedElement48.length; i++) {
+        let element = animatedElement48[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_48');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(49)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement49 = document.querySelectorAll('#aboutUs p > span:nth-child(49)');
+    for (let i = 0; i < animatedElement49.length; i++) {
+        let element = animatedElement49[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_49');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(50)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement50 = document.querySelectorAll('#aboutUs p > span:nth-child(50)');
+    for (let i = 0; i < animatedElement50.length; i++) {
+        let element = animatedElement50[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_50');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(51)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement51 = document.querySelectorAll('#aboutUs p > span:nth-child(51)');
+    for (let i = 0; i < animatedElement51.length; i++) {
+        let element = animatedElement51[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_51');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(52)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement52 = document.querySelectorAll('#aboutUs p > span:nth-child(52)');
+    for (let i = 0; i < animatedElement52.length; i++) {
+        let element = animatedElement52[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_52');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(53)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement53 = document.querySelectorAll('#aboutUs p > span:nth-child(53)');
+    for (let i = 0; i < animatedElement53.length; i++) {
+        let element = animatedElement53[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_53');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(54)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement54 = document.querySelectorAll('#aboutUs p > span:nth-child(54)');
+    for (let i = 0; i < animatedElement54.length; i++) {
+        let element = animatedElement54[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_54');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(55)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement55 = document.querySelectorAll('#aboutUs p > span:nth-child(55)');
+    for (let i = 0; i < animatedElement55.length; i++) {
+        let element = animatedElement55[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_55');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(56)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement56 = document.querySelectorAll('#aboutUs p > span:nth-child(56)');
+    for (let i = 0; i < animatedElement56.length; i++) {
+        let element = animatedElement56[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_56');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(57)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement57 = document.querySelectorAll('#aboutUs p > span:nth-child(57)');
+    for (let i = 0; i < animatedElement57.length; i++) {
+        let element = animatedElement57[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_57');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(58)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement58 = document.querySelectorAll('#aboutUs p > span:nth-child(58)');
+    for (let i = 0; i < animatedElement58.length; i++) {
+        let element = animatedElement58[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_58');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(59)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement59 = document.querySelectorAll('#aboutUs p > span:nth-child(59)');
+    for (let i = 0; i < animatedElement59.length; i++) {
+        let element = animatedElement59[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_59');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(60)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement60 = document.querySelectorAll('#aboutUs p > span:nth-child(60)');
+    for (let i = 0; i < animatedElement60.length; i++) {
+        let element = animatedElement60[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_60');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(61)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement61 = document.querySelectorAll('#aboutUs p > span:nth-child(61)');
+    for (let i = 0; i < animatedElement61.length; i++) {
+        let element = animatedElement61[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_61');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(62)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement62 = document.querySelectorAll('#aboutUs p > span:nth-child(62)');
+    for (let i = 0; i < animatedElement62.length; i++) {
+        let element = animatedElement62[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_62');
         }
     }
 
-    var animatedElements = document.querySelectorAll('#aboutUs p > span:nth-child(63)');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let animatedElement63 = document.querySelectorAll('#aboutUs p > span:nth-child(63)');
+    for (let i = 0; i < animatedElement63.length; i++) {
+        let element = animatedElement63[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('animation_63');
@@ -761,53 +760,23 @@ window.addEventListener('scroll', function () {
     }
 
     // Information section
-    var animatedElements = document.querySelectorAll('.bounceToLeftBox');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let bounceToLeftElement = document.querySelectorAll('.bounceToLeftBox');
+    for (let i = 0; i < bounceToLeftElement.length; i++) {
+        let element = bounceToLeftElement[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('bounceToLeft', 'anime');
         }
     }
 
-    var animatedElements = document.querySelectorAll('.bounceToRightBox');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
+    let bounceToRightElement = document.querySelectorAll('.bounceToRightBox');
+    for (let i = 0; i < bounceToRightElement.length; i++) {
+        let element = bounceToRightElement[i];
+        let positionFromTop = element.getBoundingClientRect().top;
 
         if (positionFromTop - window.innerHeight <= 0) {
             element.classList.add('bounceToRight', 'anime');
-        }
-    }
-
-    var animatedElements = document.querySelectorAll('.fadeInUpBox');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
-
-        if (window.innerHeight - positionFromTop >= 200) {
-            element.classList.add('fadeInUp');
-        }
-    }
-
-    var animatedElements = document.querySelectorAll('.fadeInLeftBox');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
-
-        if (window.innerHeight - positionFromTop >= 200) {
-            element.classList.add('fadeInLeft');
-        }
-    }
-
-    var animatedElements = document.querySelectorAll('.fadeInRightBox');
-    for (var i = 0; i < animatedElements.length; i++) {
-        var element = animatedElements[i];
-        var positionFromTop = element.getBoundingClientRect().top;
-
-        if (window.innerHeight - positionFromTop >= 200) {
-            element.classList.add('fadeInRight');
         }
     }
 });
@@ -817,7 +786,7 @@ let upButton = document.getElementById("upBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
@@ -835,9 +804,9 @@ function topFunction() {
 }
 
 function playVideo() {
-    var video = document.getElementById("synvork-video");
-    var pauseSvg = document.getElementById("PauseSvg");
-    var playSvg = document.getElementById("PlaySvg");
+    let video = document.getElementById("synvork-video");
+    let pauseSvg = document.getElementById("PauseSvg");
+    let playSvg = document.getElementById("PlaySvg");
     if (video.paused) {
         video.play();
         playSvg.classList.replace('d-inline-block', 'd-none');
@@ -851,7 +820,7 @@ function playVideo() {
 
 let $cont = document.querySelector('.cont');
 let $elsArr = [].slice.call(document.querySelectorAll('.el'));
-let $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+let $closeBtnArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
 
 setTimeout(function () {
     $cont.classList.remove('s--inactive');
@@ -865,7 +834,7 @@ $elsArr.forEach(function ($el) {
     });
 });
 
-$closeBtnsArr.forEach(function ($btn) {
+$closeBtnArr.forEach(function ($btn) {
     $btn.addEventListener('click', function (e) {
         e.stopPropagation();
         $cont.classList.remove('s--el-active');
@@ -974,14 +943,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const about_h2_1 = document.getElementById('about_h2_1');
     about_box_1?.addEventListener('click', function () {
         const p = document.createElement('p');
-        // p.textContent = "Refurbished machinery provides reliable production processes through rigorous testing and\n" +
-        //     "                    inspections, increasing client confidence in equipment surpassing industry standards.";
-
         p.textContent = "Les machines rénovées offrent des processus de production fiables grâce à des tests" +
             " et des inspections rigoureux, renforçant la confiance des clients dans des équipements dépassant" +
             " les normes de l'industrie.";
-
-
         about_box_1.style.animation = 'rotation 1s ease-in-out';
         about_h2_1.replaceWith(p);
     });
@@ -990,14 +954,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const about_h2_2 = document.getElementById('about_h2_2');
     about_box_2?.addEventListener('click', function () {
         const p = document.createElement('p');
-        // p.textContent = "Refurbished pharmaceutical machinery offers a cost-effective option with excellent performance,\n" +
-        //     "                    saving on the high capital investment required for new equipment.";
-
-
         p.textContent = "Les machines pharmaceutiques rénovées offrent une option économique avec une excellente performance," +
             " permettant d'économiser sur l'investissement en capital élevé requis pour de nouveaux équipements.";
-
-
         about_box_2.style.animation = 'rotation 1s ease-in-out';
         about_h2_2.replaceWith(p);
     });
@@ -1006,14 +964,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const about_h2_3 = document.getElementById('about_h2_3');
     about_box_3?.addEventListener('click', function () {
         const p = document.createElement('p');
-        // p.textContent = "SYNVORK specializes in customizing refurbished machines to fit unique production needs,\n" +
-        //     "                    seamlessly\n" +
-        //     "                    integrating them into existing production lines.";
-
-
         p.textContent = "SYNVORK se spécialise dans la personnalisation de machines rénovées pour répondre aux besoins" +
             " de production uniques, les intégrant de manière transparente dans les lignes de production existantes.";
-
         about_box_3.style.animation = 'rotation 1s ease-in-out';
         about_h2_3.replaceWith(p);
     });
@@ -1022,13 +974,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const about_h2_4 = document.getElementById('about_h2_4');
     about_box_4?.addEventListener('click', function () {
         const p = document.createElement('p');
-        // p.textContent = "Refurbished machines in pharmaceutical production save time and money by allowing businesses to\n" +
-        //     "                    quickly meet market demands, making them more efficient than new machines.";
-
         p.textContent = "Les machines rénovées dans la production pharmaceutique permettent d'économiser du temps et de l'argent" +
             " en permettant aux entreprises de répondre rapidement aux demandes du marché, les rendant plus efficaces que les" +
             " nouvelles machines.";
-
         about_box_4.style.animation = 'rotation 1s ease-in-out';
         about_h2_4.replaceWith(p);
     });
@@ -1075,15 +1023,3 @@ document.addEventListener('DOMContentLoaded', function () {
         about_h2_en_4.replaceWith(p);
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
