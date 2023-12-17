@@ -846,6 +846,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_1 = document.getElementById('Information_1');
     Information_1?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_1");
+        image.classList.add("clicked");
         // Create a new paragraph element
         const p = document.createElement('p');
         // Apply styles to the paragraph
@@ -862,6 +864,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_2 = document.getElementById('Information_2');
     Information_2?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_2");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "Au-delà des machines pharmaceutiques, nous étendons nos compétences de rénovation" +
             " aux équipements de laboratoire. Des fours aux congélateurs avancés, en passant par" +
@@ -873,6 +877,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_3 = document.getElementById('Information_3');
     Information_3?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_3");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "Chez SYNVORK, la qualité est notre pierre angulaire. Nous suivons des processus de rénovation" +
             " rigoureux et des mesures de contrôle qualité pour garantir que chaque machine et équipement que" +
@@ -884,6 +890,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_4 = document.getElementById('Information_4');
     Information_4?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_4");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "Nous accordons la priorité à la durabilité et à la rentabilité dans l'industrie pharmaceutique" +
             " en rénovant les machines existantes, réduisant les déchets et diminuant l'empreinte carbone." +
@@ -896,6 +904,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // eng
     const Information_en_1 = document.getElementById('Information_en_1');
     Information_en_1?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_1");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "Our expertise encompasses refurbishing pharmaceutical machines" +
             " like solid dosage form equipment injectable lines, and biopharmaceutical" +
@@ -908,6 +918,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_en_2 = document.getElementById('Information_en_2');
     Information_en_2?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_2");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "Beyond pharmaceutical machinery, we extend our refurbishing capabilities to laboratory equipment.\n" +
             "                From ovens to advanced freezers, centrifuges, and chromatography systems, including HPLC, UPLC, GC,\n" +
@@ -918,6 +930,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_en_3 = document.getElementById('Information_en_3');
     Information_en_3?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_3");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "At SYNVORK, quality is our cornerstone. We follow stringent refurbishing processes and quality\n" +
             "                control measures to ensure that every machine and equipment we refurbish meets or exceeds industry\n" +
@@ -929,6 +943,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const Information_en_4 = document.getElementById('Information_en_4');
     Information_en_4?.addEventListener('click', function () {
+        const image = document.getElementById("Information_img_4");
+        image.classList.add("clicked");
         const p = document.createElement('p');
         p.textContent = "We prioritize sustainability and cost-effectiveness in the pharmaceutical industry by refurbishing\n" +
             "                existing machinery, reducing waste, and lowering carbon footprint. Our refurbished equipment offers\n" +
@@ -1022,4 +1038,13 @@ document.addEventListener('DOMContentLoaded', function () {
         about_box_en_4.style.animation = 'rotation 1s ease-in-out';
         about_h2_en_4.replaceWith(p);
     });
+});
+
+
+const image = document.getElementById("image");
+// const description = document.getElementById("description");
+
+document.getElementById("Information_en_2").addEventListener("click", () => {
+    image.classList.add("clicked");
+    // description.style.display = "block"; /* Optionally, display the description after the animation */
 });

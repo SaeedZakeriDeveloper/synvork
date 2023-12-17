@@ -800,6 +800,10 @@ input::placeholder {
     padding-left: var(--s);
 }
 
+img[id^='Information_img_'] {
+    transition: transform 1s ease-in-out; /* Add transition property to enable smooth animation */
+}
+
 @media screen and (max-width: 550px) {
     .Information img {
         --s: 85vw; /* the image size */
@@ -808,9 +812,14 @@ input::placeholder {
     }
 }
 
+@media screen and (max-width: 991px) {
+    img[id^='Information_img_'].clicked {
+        transform: translateY(5px); /* Adjust the amount and direction of translation */
+    }
+}
+
 @media screen and (min-width: 992px) {
     .Information img:hover {
-        /*margin-top: 10px;*/
         padding: 0;
     }
 }
@@ -2173,7 +2182,3 @@ section#contact > div:nth-child(2) > a:hover {
 
 
 /* #################################carosel#################################### */
-
-
-
-
