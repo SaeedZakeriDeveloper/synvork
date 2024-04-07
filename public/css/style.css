@@ -780,11 +780,11 @@ input::placeholder {
 }
 
 .Information > .container:nth-child(1) img {
-    background: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg") 100%/cover #000;
+    background: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.webp") 100%/cover #000;
 }
 
 .Information > .container:nth-child(2) img {
-    background: url("../img/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing-protective-clothing.jpg") 100%/cover #000;
+    background: url("../img/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing-protective-clothing.webp") 100%/cover #000;
 }
 
 .Information > .container:nth-child(3) img {
@@ -1087,7 +1087,9 @@ section#video > div:nth-child(1) video {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); /* For Webkit-based browsers */
+    -moz-transform: translate3d(0, 0, 0); /* For Mozilla Firefox */
+    transform: translate3d(0, 0, 0); /* Standard property */
 }
 
 header + section {
@@ -1102,14 +1104,14 @@ header + section {
     padding: 150px 50px 20px 50px;
 }
 
-header + section > div {
-    /*opacity: 0;*/
-    /*transition: opacity 1s linear;*/
-}
+/* header + section > div {
+    opacity: 0;
+    transition: opacity 1s linear;
+} */
 
-header + section:hover > div {
-    /*opacity: 1;*/
-}
+/* header + section:hover > div {
+    opacity: 1;
+} */
 
 header + section > div > h1 {
     color: white;
@@ -1199,7 +1201,7 @@ section#services > h1 {
 }
 
 section#contact > div:nth-child(1) {
-    background-image: url("../img/contactus.jpg");
+    background-image: url("../img/contactus.webp");
     background-position: center;
     background-size: cover;
     height: 226px;
@@ -1716,7 +1718,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .el:nth-child(1) .el__bg:before {
     transition-delay: 0s;
-    background-image: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.jpg");
+    background-image: url("../img/technologist-white-protective-suit-checking-pressure-pressure-gauge-industrial-machine-factory.webp");
 }
 
 .el:nth-child(2) {
@@ -1740,7 +1742,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .el:nth-child(2) .el__bg:before {
     transition-delay: 0.1s;
-    background-image: url("../img/3d-coronavirus-vaccine-vials-arrangement.jpg");
+    background-image: url("../img/3d-coronavirus-vaccine-vials.webp");
 }
 
 .el:nth-child(3) {
@@ -1764,7 +1766,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    background-image: url("../img/scientist-conducting-gel-electrophoresis-biological-process-as-part-research.jpg");
+    background-image: url("../img/scientist-conducting-gel-electrophoresis-biological-process-as-part-research.webp");
 }
 
 .el:nth-child(4) {
@@ -1788,7 +1790,7 @@ section#contact > div:nth-child(2) > a:hover {
 
 .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
-    background-image: url("../img/glassware-microscope-arrangement.jpg");
+    background-image: url("../img/glassware-microscope-arrangement.webp");
 }
 
 .el:nth-child(5) {
